@@ -159,6 +159,8 @@
 		B4476A2D1DA8D1940014E9BB /* ELUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4476A2C1DA8D1940014E9BB /* ELUserInfoModel.m */; };
 		B4476A301DA8D24D0014E9BB /* ELCommonConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B4476A2F1DA8D24D0014E9BB /* ELCommonConstant.m */; };
 		B4476A331DA8D3840014E9BB /* ELRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B4476A321DA8D3840014E9BB /* ELRefreshFooter.m */; };
+		B4888E721DA8D91A005034FC /* ELWeiXinNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4888E711DA8D91A005034FC /* ELWeiXinNewsModel.m */; };
+		B4888E751DA8EAA5005034FC /* ELWeiXinNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4888E741DA8EAA5005034FC /* ELWeiXinNewsDetailController.m */; };
 		B493E19D1D9CA7BF0046C81A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E19C1D9CA7BF0046C81A /* main.m */; };
 		B493E1A01D9CA7BF0046C81A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E19F1D9CA7BF0046C81A /* AppDelegate.m */; };
 		B493E1A81D9CA7BF0046C81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B493E1A71D9CA7BF0046C81A /* Assets.xcassets */; };
@@ -487,6 +489,10 @@
 		B4476A2F1DA8D24D0014E9BB /* ELCommonConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCommonConstant.m; sourceTree = "<group>"; };
 		B4476A311DA8D3840014E9BB /* ELRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELRefreshFooter.h; sourceTree = "<group>"; };
 		B4476A321DA8D3840014E9BB /* ELRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELRefreshFooter.m; sourceTree = "<group>"; };
+		B4888E701DA8D91A005034FC /* ELWeiXinNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsModel.h; sourceTree = "<group>"; };
+		B4888E711DA8D91A005034FC /* ELWeiXinNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELWeiXinNewsModel.m; sourceTree = "<group>"; };
+		B4888E731DA8EAA5005034FC /* ELWeiXinNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsDetailController.h; sourceTree = "<group>"; };
+		B4888E741DA8EAA5005034FC /* ELWeiXinNewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELWeiXinNewsDetailController.m; sourceTree = "<group>"; };
 		B493E1981D9CA7BF0046C81A /* EasyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B493E19C1D9CA7BF0046C81A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B493E19E1D9CA7BF0046C81A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -720,6 +726,8 @@
 			children = (
 				B44768591DA891290014E9BB /* ELLifeViewController.h */,
 				B447685A1DA891290014E9BB /* ELLifeViewController.m */,
+				B4888E731DA8EAA5005034FC /* ELWeiXinNewsDetailController.h */,
+				B4888E741DA8EAA5005034FC /* ELWeiXinNewsDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -727,6 +735,8 @@
 		B44768571DA891040014E9BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B4888E701DA8D91A005034FC /* ELWeiXinNewsModel.h */,
+				B4888E711DA8D91A005034FC /* ELWeiXinNewsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1504,6 +1514,7 @@
 				TargetAttributes = {
 					B493E1971D9CA7BF0046C81A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = W55448EFBF;
 					};
 					B493E1B01D9CA7BF0046C81A = {
 						CreatedOnToolsVersion = 7.2;
@@ -1586,6 +1597,7 @@
 				B44768DF1DA8A3060014E9BB /* YYWebImageManager.m in Sources */,
 				B44768D81DA8A3060014E9BB /* _YYWebImageSetter.m in Sources */,
 				B44769AA1DA8A4540014E9BB /* MASCompositeConstraint.m in Sources */,
+				B4888E721DA8D91A005034FC /* ELWeiXinNewsModel.m in Sources */,
 				B44768781DA894F50014E9BB /* MJFoundation.m in Sources */,
 				B44768D91DA8A3060014E9BB /* CALayer+YYWebImage.m in Sources */,
 				B447693A1DA8A31E0014E9BB /* YYAnimatedImageView.m in Sources */,
@@ -1607,6 +1619,7 @@
 				B44768DE1DA8A3060014E9BB /* YYImageCache.m in Sources */,
 				B44769371DA8A31E0014E9BB /* YYMemoryCache.m in Sources */,
 				B44769811DA8A4450014E9BB /* SDWebImageDecoder.m in Sources */,
+				B4888E751DA8EAA5005034FC /* ELWeiXinNewsDetailController.m in Sources */,
 				B44769481DA8A31E0014E9BB /* YYTextAttribute.m in Sources */,
 				B44768DC1DA8A3060014E9BB /* UIImage+YYWebImage.m in Sources */,
 				B44769B01DA8A4540014E9BB /* NSArray+MASAdditions.m in Sources */,
@@ -1846,11 +1859,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EasyLife/ELPrefixHeader.pch";
 				INFOPLIST_FILE = EasyLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeliang.EasyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1858,11 +1874,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EasyLife/ELPrefixHeader.pch";
 				INFOPLIST_FILE = EasyLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeliang.EasyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

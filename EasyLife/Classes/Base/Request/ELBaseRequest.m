@@ -105,12 +105,12 @@
     }
     
     // 数据请求成功回调
-    BOOL success = [responseObject[@"message"] isEqualToString:@"success"];
+    BOOL success = [responseObject[@"reason"] isEqualToString:@"success"];
     if (completion) {
-        completion(responseObject[@"data"], success, @"");
+        completion(responseObject[@"result"], success, @"");
     } else if (self.el_delegate) {
         if ([self.el_delegate respondsToSelector:@selector(requestSuccessReponse:response:message:)]) {
-            [self.el_delegate requestSuccessReponse:success response:responseObject[@"data"] message:@""];
+            [self.el_delegate requestSuccessReponse:success response:responseObject[@"result"] message:@""];
         }
     }
     // 请求成功，发布通知
