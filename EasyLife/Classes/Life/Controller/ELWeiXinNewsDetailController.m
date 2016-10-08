@@ -18,7 +18,7 @@
 - (void)viewDidLoad{
     
     [super viewDidLoad];
-    self.title = @"腾讯新闻";
+    self.title = @"微信精选";
     self.webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - kTabBarHeight - kNavigationBarHeight)];
     [self.view addSubview:self.webView];
     [self loadUrl];

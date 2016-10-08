@@ -9,7 +9,8 @@
 #import "ELLifeViewController.h"
 #import "ELBaseRequest.h"
 #import "ELWeiXinNewsModel.h"
-#import "YYWebImage.h"
+#import "UIImageView+YYWebImage.h"
+
 #import "ELWeiXinNewsDetailController.h"
 
 @interface ELLifeViewController ()
@@ -25,7 +26,6 @@
     
     [super viewDidLoad];
     
-    self.navigationController.title = @"微信新闻";
     self.pageIndex = 1;
     [self loadData];
     
@@ -90,11 +90,12 @@
     cell.textLabel.text = model.title;
     cell.textLabel.numberOfLines = 0;
     NSString * imageUrl = [model.firstImg stringByReplacingOccurrencesOfString:@"\\" withString:@""];
-    cell.imageView.image = [[UIImage alloc]init];
-    [[YYWebImageManager sharedManager] requestImageWithURL:[NSURL URLWithString:imageUrl] options:YYWebImageOptionShowNetworkActivity progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
-        cell.imageView.image = image;
-    }];
-                            
+
+//    [[YYWebImageManager sharedManager] requestImageWithURL:[NSURL URLWithString:imageUrl] options:YYWebImageOptionUseNSURLCache progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+//        cell.imageView.image = image;
+//    }];
+    [cell.imageView yy_setImageWithURL:[NSURL URLWithString:imageUrl] placeholder:[UIImage imageNamed:@"refreshjoke_loading_0"]];
+    
     return cell;
 }
 

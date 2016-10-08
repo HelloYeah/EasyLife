@@ -50,7 +50,7 @@
     // Do any additional setup after loading the view.
     [self addChildViewControllerWithClassname:[ELHomeViewController description] imagename:@"home" title:@"首页"];
     [self addChildViewControllerWithClassname:[ELNewsViewController description] imagename:@"newstab" title:@"新闻"];
-    [self addChildViewControllerWithClassname:[ELLifeViewController description] imagename:@"life" title:@"生活"];
+    [self addChildViewControllerWithClassname:[ELLifeViewController description] imagename:@"life" title:@"微信精选"];
     [self addChildViewControllerWithClassname:[ELMeViewController description]imagename:@"audit" title:@"我"];
 }
 
@@ -61,7 +61,7 @@
     
     UIViewController *vc = [[NSClassFromString(classname) alloc] init];
     ELBaseNavigationViewController *nav = [[ELBaseNavigationViewController alloc] initWithRootViewController:vc];
-    nav.tabBarItem.title = title;
+    vc.title = title;
     nav.tabBarItem.image = [UIImage imageNamed:imagename];
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:[imagename stringByAppendingString:@"_press"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [self addChildViewController:nav];
