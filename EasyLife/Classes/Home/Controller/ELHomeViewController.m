@@ -16,23 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    [self showLoadingAnimation];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title = @"首页";
+    
+    UIButton * btn  = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"开心一笑" forState:UIControlStateNormal];
+    [btn setTitleColor:kCommonGrayTextColor forState:UIControlStateNormal];
+    [btn sizeToFit];
+    [self.view addSubview:btn];
+    btn.center = self.view.center;
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)btnClick{
+    
+    [self.navigationController pushViewController:[[UIViewController alloc]init] animated:YES];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
