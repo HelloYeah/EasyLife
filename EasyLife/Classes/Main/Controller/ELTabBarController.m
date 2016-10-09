@@ -61,13 +61,10 @@
     
     UIViewController *vc = [[NSClassFromString(classname) alloc] init];
     ELBaseNavigationViewController *nav = [[ELBaseNavigationViewController alloc] initWithRootViewController:vc];
-    vc.title = title;
+    nav.tabBarItem.title = title;
     nav.tabBarItem.image = [UIImage imageNamed:imagename];
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:[imagename stringByAppendingString:@"_press"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [self addChildViewController:nav];
 }
-
-
-
 
 @end

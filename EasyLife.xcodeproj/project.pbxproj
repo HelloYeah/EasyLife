@@ -160,9 +160,15 @@
 		B4476A301DA8D24D0014E9BB /* ELCommonConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B4476A2F1DA8D24D0014E9BB /* ELCommonConstant.m */; };
 		B4476A331DA8D3840014E9BB /* ELRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B4476A321DA8D3840014E9BB /* ELRefreshFooter.m */; };
 		B453EA741DA9EAC400A0A8DC /* ELCommonAPIConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA731DA9EAC400A0A8DC /* ELCommonAPIConstant.m */; };
-		B4888E721DA8D91A005034FC /* ELWeiXinNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4888E711DA8D91A005034FC /* ELWeiXinNewsModel.m */; };
-		B4888E751DA8EAA5005034FC /* ELWeiXinNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4888E741DA8EAA5005034FC /* ELWeiXinNewsDetailController.m */; };
-		B4888E781DA8F580005034FC /* ELWeiXinNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4888E771DA8F580005034FC /* ELWeiXinNewsListCell.m */; };
+		B453EA771DAA117F00A0A8DC /* ELWeiXinNewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA761DAA117F00A0A8DC /* ELWeiXinNewsListController.m */; };
+		B453EA7A1DAA152F00A0A8DC /* ELTodayHotNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA791DAA152F00A0A8DC /* ELTodayHotNewsController.m */; };
+		B453EA7D1DAA163900A0A8DC /* HYTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA7C1DAA163900A0A8DC /* HYTabbarView.m */; };
+		B453EA801DAA164F00A0A8DC /* HYTabbarCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA7F1DAA164F00A0A8DC /* HYTabbarCollectionCell.m */; };
+		B453EA831DAA195200A0A8DC /* ELWeiXinNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA821DAA195200A0A8DC /* ELWeiXinNewsDetailController.m */; };
+		B453EA861DAA196B00A0A8DC /* ELWeiXinNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA851DAA196B00A0A8DC /* ELWeiXinNewsModel.m */; };
+		B453EA891DAA197800A0A8DC /* ELWeiXinNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA881DAA197800A0A8DC /* ELWeiXinNewsListCell.m */; };
+		B453EA8C1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA8B1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m */; };
+		B453EA8F1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA8E1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m */; };
 		B493E19D1D9CA7BF0046C81A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E19C1D9CA7BF0046C81A /* main.m */; };
 		B493E1A01D9CA7BF0046C81A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E19F1D9CA7BF0046C81A /* AppDelegate.m */; };
 		B493E1A81D9CA7BF0046C81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B493E1A71D9CA7BF0046C81A /* Assets.xcassets */; };
@@ -493,12 +499,24 @@
 		B4476A321DA8D3840014E9BB /* ELRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELRefreshFooter.m; sourceTree = "<group>"; };
 		B453EA721DA9EAC400A0A8DC /* ELCommonAPIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCommonAPIConstant.h; sourceTree = "<group>"; };
 		B453EA731DA9EAC400A0A8DC /* ELCommonAPIConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCommonAPIConstant.m; sourceTree = "<group>"; };
-		B4888E701DA8D91A005034FC /* ELWeiXinNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsModel.h; sourceTree = "<group>"; };
-		B4888E711DA8D91A005034FC /* ELWeiXinNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELWeiXinNewsModel.m; sourceTree = "<group>"; };
-		B4888E731DA8EAA5005034FC /* ELWeiXinNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsDetailController.h; sourceTree = "<group>"; };
-		B4888E741DA8EAA5005034FC /* ELWeiXinNewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELWeiXinNewsDetailController.m; sourceTree = "<group>"; };
-		B4888E761DA8F580005034FC /* ELWeiXinNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsListCell.h; sourceTree = "<group>"; };
-		B4888E771DA8F580005034FC /* ELWeiXinNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELWeiXinNewsListCell.m; sourceTree = "<group>"; };
+		B453EA751DAA117F00A0A8DC /* ELWeiXinNewsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsListController.h; sourceTree = "<group>"; };
+		B453EA761DAA117F00A0A8DC /* ELWeiXinNewsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELWeiXinNewsListController.m; sourceTree = "<group>"; };
+		B453EA781DAA152F00A0A8DC /* ELTodayHotNewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTodayHotNewsController.h; sourceTree = "<group>"; };
+		B453EA791DAA152F00A0A8DC /* ELTodayHotNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTodayHotNewsController.m; sourceTree = "<group>"; };
+		B453EA7B1DAA163900A0A8DC /* HYTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabbarView.h; sourceTree = "<group>"; };
+		B453EA7C1DAA163900A0A8DC /* HYTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabbarView.m; sourceTree = "<group>"; };
+		B453EA7E1DAA164F00A0A8DC /* HYTabbarCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabbarCollectionCell.h; sourceTree = "<group>"; };
+		B453EA7F1DAA164F00A0A8DC /* HYTabbarCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabbarCollectionCell.m; sourceTree = "<group>"; };
+		B453EA811DAA195200A0A8DC /* ELWeiXinNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsDetailController.h; sourceTree = "<group>"; };
+		B453EA821DAA195200A0A8DC /* ELWeiXinNewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELWeiXinNewsDetailController.m; sourceTree = "<group>"; };
+		B453EA841DAA196B00A0A8DC /* ELWeiXinNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsModel.h; sourceTree = "<group>"; };
+		B453EA851DAA196B00A0A8DC /* ELWeiXinNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELWeiXinNewsModel.m; sourceTree = "<group>"; };
+		B453EA871DAA197800A0A8DC /* ELWeiXinNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsListCell.h; sourceTree = "<group>"; };
+		B453EA881DAA197800A0A8DC /* ELWeiXinNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELWeiXinNewsListCell.m; sourceTree = "<group>"; };
+		B453EA8A1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTodayHotNewsChildController.h; sourceTree = "<group>"; };
+		B453EA8B1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTodayHotNewsChildController.m; sourceTree = "<group>"; };
+		B453EA8D1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTodayHotNewsChildModel.h; sourceTree = "<group>"; };
+		B453EA8E1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTodayHotNewsChildModel.m; sourceTree = "<group>"; };
 		B493E1981D9CA7BF0046C81A /* EasyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B493E19C1D9CA7BF0046C81A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B493E19E1D9CA7BF0046C81A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -734,8 +752,6 @@
 			children = (
 				B44768591DA891290014E9BB /* ELLifeViewController.h */,
 				B447685A1DA891290014E9BB /* ELLifeViewController.m */,
-				B4888E731DA8EAA5005034FC /* ELWeiXinNewsDetailController.h */,
-				B4888E741DA8EAA5005034FC /* ELWeiXinNewsDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -743,8 +759,6 @@
 		B44768571DA891040014E9BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B4888E701DA8D91A005034FC /* ELWeiXinNewsModel.h */,
-				B4888E711DA8D91A005034FC /* ELWeiXinNewsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -752,8 +766,6 @@
 		B44768581DA891040014E9BB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B4888E761DA8F580005034FC /* ELWeiXinNewsListCell.h */,
-				B4888E771DA8F580005034FC /* ELWeiXinNewsListCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1426,6 +1438,14 @@
 			children = (
 				B44768331DA889670014E9BB /* ELNewsViewController.h */,
 				B44768341DA889670014E9BB /* ELNewsViewController.m */,
+				B453EA751DAA117F00A0A8DC /* ELWeiXinNewsListController.h */,
+				B453EA761DAA117F00A0A8DC /* ELWeiXinNewsListController.m */,
+				B453EA811DAA195200A0A8DC /* ELWeiXinNewsDetailController.h */,
+				B453EA821DAA195200A0A8DC /* ELWeiXinNewsDetailController.m */,
+				B453EA781DAA152F00A0A8DC /* ELTodayHotNewsController.h */,
+				B453EA791DAA152F00A0A8DC /* ELTodayHotNewsController.m */,
+				B453EA8A1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.h */,
+				B453EA8B1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1433,6 +1453,10 @@
 		B493E1DD1D9CA8590046C81A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B453EA841DAA196B00A0A8DC /* ELWeiXinNewsModel.h */,
+				B453EA851DAA196B00A0A8DC /* ELWeiXinNewsModel.m */,
+				B453EA8D1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.h */,
+				B453EA8E1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1440,6 +1464,12 @@
 		B493E1DE1D9CA8590046C81A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B453EA871DAA197800A0A8DC /* ELWeiXinNewsListCell.h */,
+				B453EA881DAA197800A0A8DC /* ELWeiXinNewsListCell.m */,
+				B453EA7B1DAA163900A0A8DC /* HYTabbarView.h */,
+				B453EA7C1DAA163900A0A8DC /* HYTabbarView.m */,
+				B453EA7E1DAA164F00A0A8DC /* HYTabbarCollectionCell.h */,
+				B453EA7F1DAA164F00A0A8DC /* HYTabbarCollectionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1597,20 +1627,21 @@
 			files = (
 				B447689C1DA89F560014E9BB /* UIView+Tap.m in Sources */,
 				B447694C1DA8A31E0014E9BB /* YYTextInput.m in Sources */,
-				B4888E781DA8F580005034FC /* ELWeiXinNewsListCell.m in Sources */,
 				B44769561DA8A31E0014E9BB /* YYTextUtilities.m in Sources */,
 				B4476A1F1DA8D07E0014E9BB /* MJRefreshConst.m in Sources */,
+				B453EA8F1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m in Sources */,
 				B447682F1DA8885F0014E9BB /* ELTabBarController.m in Sources */,
 				B447687F1DA894F50014E9BB /* NSObject+MJProperty.m in Sources */,
 				B44769521DA8A31E0014E9BB /* YYTextRubyAnnotation.m in Sources */,
 				B44769831DA8A4450014E9BB /* SDWebImageDownloaderOperation.m in Sources */,
 				B447694A1DA8A31E0014E9BB /* YYTextDebugOption.m in Sources */,
+				B453EA831DAA195200A0A8DC /* ELWeiXinNewsDetailController.m in Sources */,
 				B44768DF1DA8A3060014E9BB /* YYWebImageManager.m in Sources */,
 				B44768D81DA8A3060014E9BB /* _YYWebImageSetter.m in Sources */,
 				B44769AA1DA8A4540014E9BB /* MASCompositeConstraint.m in Sources */,
-				B4888E721DA8D91A005034FC /* ELWeiXinNewsModel.m in Sources */,
 				B44768781DA894F50014E9BB /* MJFoundation.m in Sources */,
 				B44768D91DA8A3060014E9BB /* CALayer+YYWebImage.m in Sources */,
+				B453EA891DAA197800A0A8DC /* ELWeiXinNewsListCell.m in Sources */,
 				B447693A1DA8A31E0014E9BB /* YYAnimatedImageView.m in Sources */,
 				B4476A1A1DA8D07E0014E9BB /* MJRefreshBackStateFooter.m in Sources */,
 				B44769D41DA8CF720014E9BB /* NSString+Size.m in Sources */,
@@ -1630,9 +1661,10 @@
 				B44768DE1DA8A3060014E9BB /* YYImageCache.m in Sources */,
 				B44769371DA8A31E0014E9BB /* YYMemoryCache.m in Sources */,
 				B44769811DA8A4450014E9BB /* SDWebImageDecoder.m in Sources */,
-				B4888E751DA8EAA5005034FC /* ELWeiXinNewsDetailController.m in Sources */,
 				B44769481DA8A31E0014E9BB /* YYTextAttribute.m in Sources */,
+				B453EA771DAA117F00A0A8DC /* ELWeiXinNewsListController.m in Sources */,
 				B44768DC1DA8A3060014E9BB /* UIImage+YYWebImage.m in Sources */,
+				B453EA861DAA196B00A0A8DC /* ELWeiXinNewsModel.m in Sources */,
 				B44769B01DA8A4540014E9BB /* NSArray+MASAdditions.m in Sources */,
 				B44769541DA8A31E0014E9BB /* YYTextSelectionView.m in Sources */,
 				B4476A181DA8D07E0014E9BB /* MJRefreshBackGifFooter.m in Sources */,
@@ -1677,6 +1709,7 @@
 				B447697E1DA8A4450014E9BB /* NSData+ImageContentType.m in Sources */,
 				B493E1A01D9CA7BF0046C81A /* AppDelegate.m in Sources */,
 				B44768891DA89E4A0014E9BB /* ELBaseViewController.m in Sources */,
+				B453EA7A1DAA152F00A0A8DC /* ELTodayHotNewsController.m in Sources */,
 				B44769491DA8A31E0014E9BB /* YYTextContainerView.m in Sources */,
 				B44769361DA8A31E0014E9BB /* YYKVStorage.m in Sources */,
 				B44769D91DA8CFAF0014E9BB /* NSDictionary+Addition.m in Sources */,
@@ -1701,6 +1734,7 @@
 				B44769401DA8A31E0014E9BB /* YYImage-dummy.m in Sources */,
 				B44769571DA8A31E0014E9BB /* YYTextView.m in Sources */,
 				B44768791DA894F50014E9BB /* MJProperty.m in Sources */,
+				B453EA8C1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m in Sources */,
 				B4476A301DA8D24D0014E9BB /* ELCommonConstant.m in Sources */,
 				B447689A1DA89F560014E9BB /* UIView+Frame.m in Sources */,
 				B4476A151DA8D07E0014E9BB /* MJRefreshAutoGifFooter.m in Sources */,
@@ -1727,6 +1761,7 @@
 				B493E19D1D9CA7BF0046C81A /* main.m in Sources */,
 				B453EA741DA9EAC400A0A8DC /* ELCommonAPIConstant.m in Sources */,
 				B44769D21DA8CF720014E9BB /* NSString+Encrypt.m in Sources */,
+				B453EA7D1DAA163900A0A8DC /* HYTabbarView.m in Sources */,
 				B44769511DA8A31E0014E9BB /* YYTextParser.m in Sources */,
 				B447687A1DA894F50014E9BB /* MJPropertyKey.m in Sources */,
 				B44769821DA8A4450014E9BB /* SDWebImageDownloader.m in Sources */,
@@ -1734,6 +1769,7 @@
 				B44769AF1DA8A4540014E9BB /* MASViewConstraint.m in Sources */,
 				B447689B1DA89F560014E9BB /* UIView+Layer.m in Sources */,
 				B44768BE1DA8A2C80014E9BB /* AFNetworkReachabilityManager.m in Sources */,
+				B453EA801DAA164F00A0A8DC /* HYTabbarCollectionCell.m in Sources */,
 				B44768E01DA8A3060014E9BB /* YYWebImageOperation.m in Sources */,
 				B44769C21DA8CEC80014E9BB /* ELBaseRequest.m in Sources */,
 				B44768401DA88AE60014E9BB /* ELBaseNavigationViewController.m in Sources */,

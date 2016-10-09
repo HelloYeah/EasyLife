@@ -19,14 +19,16 @@
     
     [super viewDidLoad];
     self.title = @"微信精选";
-    self.webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - kTabBarHeight - kNavigationBarHeight)];
+    self.webView = [[WKWebView alloc]initWithFrame:CGRectMake(0,
+                                                              0,
+                                                              kScreenWidth,
+                                                              kScreenHeight - kNavigationBarHeight - kStatusBarHeight)];
     [self.view addSubview:self.webView];
     [self loadUrl];
     
 }
 //请求加载网页
 - (void)loadUrl{
-    
     
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.linkUrl]
                                                   cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
