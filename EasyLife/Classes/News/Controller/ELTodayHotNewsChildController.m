@@ -26,16 +26,12 @@ static const NSString * kWeiXinNewsAppKey = @"160f6a145f32d7c5410a2437923e01ea";
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-
+    
     [self.view addSubview:self.tableView];
+    [self showLoadingAnimation];
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
     [self loadData];
-    
-    
-//    [ELUtils addLoadMoreForScrollView:self.tableView loadMoreCallBack:^{
-//        [self loadData];
-//    }];
-//    
+
     [ELUtils addPullRefreshForScrollView:self.tableView pullRefreshCallBack:^{
         [self pullRefresh];
     }];
@@ -58,6 +54,8 @@ static const NSString * kWeiXinNewsAppKey = @"160f6a145f32d7c5410a2437923e01ea";
     [self.request el_sendRequestWithCompletion:^(NSDictionary * response, BOOL success, NSString *message) {
         
         if (success) {
+            
+            [self hideLoadingAnimation];
             [ELUtils endRefreshForScrollView:self.tableView];
             NSMutableArray * tempArray = response[@"data"];
             self.dataArray  = [ELTodayHotNewsChildModel modelArrayWithDictArray:tempArray];

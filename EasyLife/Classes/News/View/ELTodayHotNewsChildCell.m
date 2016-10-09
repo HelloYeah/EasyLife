@@ -52,13 +52,13 @@
     
     self.timeLabel = [[UILabel alloc]init];
     [self.bgView addSubview:self.timeLabel];
-    self.timeLabel.font = kFont(11);
-    self.timeLabel.textColor = kLightGrayColor;
+    self.timeLabel.font = kFont(12);
+    self.timeLabel.textColor = kDarkGrayColor;
     
     self.souceLabel = [[UILabel alloc]init];
     [self.bgView addSubview:self.souceLabel];
-    self.souceLabel.font = kFont(11);
-    self.souceLabel.textColor = kLightGrayColor;
+    self.souceLabel.font = kFont(12);
+    self.souceLabel.textColor = kDarkGrayColor;
 }
 
 - (void)setNewsModel:(ELTodayHotNewsChildModel *)newsModel{

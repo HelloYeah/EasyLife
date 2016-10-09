@@ -9,7 +9,7 @@
 #import "ELWeiXinNewsDetailController.h"
 #import <WebKit/WebKit.h>
 
-@interface ELWeiXinNewsDetailController ()
+@interface ELWeiXinNewsDetailController ()<WKNavigationDelegate>
 @property (nonatomic,strong) WKWebView * webView;
 @end
 
@@ -18,11 +18,12 @@
 - (void)viewDidLoad{
     
     [super viewDidLoad];
-    self.title = @"微信精选";
+    [self showLoadingAnimation];
     self.webView = [[WKWebView alloc]initWithFrame:CGRectMake(0,
                                                               0,
                                                               kScreenWidth,
                                                               kScreenHeight - kNavigationBarHeight - kStatusBarHeight)];
+    self.webView.navigationDelegate = self;
     [self.view addSubview:self.webView];
     [self loadUrl];
     
@@ -35,5 +36,13 @@
                                               timeoutInterval:10];
     
     [self.webView loadRequest:request];
+}
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation{
+    [self hideLoadingAnimation];
+}
+
+- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error{
+    [MBProgressHUD showMessage:error.domain];
 }
 @end

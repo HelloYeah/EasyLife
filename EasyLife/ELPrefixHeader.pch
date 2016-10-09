@@ -16,6 +16,6 @@
 #import "UIImageView+WebCache.h"
 #import "UIView+Frame.h"
 #import "ELCommonAPIConstant.h"
-
+#import "MBProgressHUD+NHAddition.h"
 
 #endif /* ELPrefixHeader_pch */

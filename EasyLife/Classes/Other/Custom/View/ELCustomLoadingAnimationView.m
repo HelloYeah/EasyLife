@@ -30,7 +30,8 @@
     [view addSubview:self];
     self.frame = view.bounds;
     self.imageView.frame = CGRectMake(0, 0, 70, 100);
-    self.imageView.center = self.center;
+    self.imageView.centerX = self.centerX;
+    self.imageView.centerY = self.centerY * 0.7;
     
     [self.imageView startAnimating];
     

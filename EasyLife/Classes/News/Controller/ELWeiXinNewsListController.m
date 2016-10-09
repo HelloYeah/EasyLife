@@ -29,7 +29,7 @@ static const NSString * kWeiXinNewsAppKey = @"8d99c5ce4d8d02ee59ecf1a5e13f77e0";
     [super viewDidLoad];
     
     [self.view addSubview:self.tableView];
-    
+    [self showLoadingAnimation];
     self.pageIndex = 1;
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
     [self loadData];
@@ -61,6 +61,8 @@ static const NSString * kWeiXinNewsAppKey = @"8d99c5ce4d8d02ee59ecf1a5e13f77e0";
     [self.request el_sendRequestWithCompletion:^(NSDictionary * response, BOOL success, NSString *message) {
         
         if (success) {
+            
+            [self hideLoadingAnimation];
             [ELUtils endLoadMoreForScrollView:self.tableView];
             NSMutableArray * tempArray = response[@"list"];
             [self.dataArray addObjectsFromArray:[ELWeiXinNewsModel modelArrayWithDictArray:tempArray]];
@@ -106,6 +108,7 @@ static const NSString * kWeiXinNewsAppKey = @"8d99c5ce4d8d02ee59ecf1a5e13f77e0";
     NSString * linkUrl = [model.url stringByReplacingOccurrencesOfString:@"\\" withString:@""];
     ELWeiXinNewsDetailController * weiXinNewsDetailVC = [[ELWeiXinNewsDetailController alloc]init];
     weiXinNewsDetailVC.linkUrl = linkUrl;
+    weiXinNewsDetailVC.title = @"微信精选";
     weiXinNewsDetailVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:weiXinNewsDetailVC animated:YES];
 }
