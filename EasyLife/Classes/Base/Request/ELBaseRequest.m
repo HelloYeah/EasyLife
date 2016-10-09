@@ -105,7 +105,7 @@
     }
     
     // 数据请求成功回调
-    BOOL success = [responseObject[@"reason"] isEqualToString:@"success"];
+    BOOL success = [responseObject[@"reason"] isEqualToString:@"success"] ||[responseObject[@"reason"] isEqualToString:@"成功的返回"];
     if (completion) {
         completion(responseObject[@"result"], success, @"");
     } else if (self.el_delegate) {

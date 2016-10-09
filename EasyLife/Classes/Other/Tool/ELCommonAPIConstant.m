@@ -9,8 +9,11 @@
 #import "ELCommonAPIConstant.h"
 
 @implementation ELCommonAPIConstant
+
 #pragma mark - READ / 阅读类
 /** 微信精选*/
-
 NSString *const kELWeiXinNewsListAPI = @"http://v.juhe.cn/weixin/query";
+/** 今日资讯*/
+NSString *const kELTodayHotNewsListAPI = @"http://v.juhe.cn/toutiao/index";
+
 @end

@@ -8,7 +8,7 @@
 
 #import "ELTodayHotNewsController.h"
 #import "HYTabbarView.h"
-#import "ELWeiXinNewsListController.h"
+#import "ELTodayHotNewsChildController.h"
 
 @interface ELTodayHotNewsController ()
 @property (nonatomic,strong) HYTabbarView * tabbarView;
@@ -29,45 +29,55 @@
                                                                     0,
                                                                     kScreenWidth,
                                                                     kScreenHeight - kStatusBarHeight - kNavigationBarHeight - kTabBarHeight)];
-
-        ELWeiXinNewsListController * top = [[ELWeiXinNewsListController alloc]init];
+//类型,,top(头条，默认),shehui(社会),guonei(国内),guoji(国际),yule(娱乐),tiyu(体育)junshi(军事),keji(科技),caijing(财经),shishang(时尚)
+        ELTodayHotNewsChildController * top = [[ELTodayHotNewsChildController alloc]init];
         top.title = @"头条";
+        top.newsType = @"top";
         [_tabbarView addSubItemWithViewController:top];
         
-        ELWeiXinNewsListController * shehui = [[ELWeiXinNewsListController alloc]init];
+        ELTodayHotNewsChildController * shehui = [[ELTodayHotNewsChildController alloc]init];
         shehui.title = @"社会";
+        shehui.newsType = @"shehui";
         [_tabbarView addSubItemWithViewController:shehui];
         
-        ELWeiXinNewsListController * guonei = [[ELWeiXinNewsListController alloc]init];
+        ELTodayHotNewsChildController * guonei = [[ELTodayHotNewsChildController alloc]init];
         guonei.title = @"国内";
+        guonei.newsType = @"guonei";
         [_tabbarView addSubItemWithViewController:guonei];
         
-        ELWeiXinNewsListController * guoji = [[ELWeiXinNewsListController alloc]init];
+        ELTodayHotNewsChildController * guoji = [[ELTodayHotNewsChildController alloc]init];
         guoji.title = @"国际";
+        guoji.newsType = @"guoji";
         [_tabbarView addSubItemWithViewController:guoji];
         
-        ELWeiXinNewsListController * yule = [[ELWeiXinNewsListController alloc]init];
+        ELTodayHotNewsChildController * yule = [[ELTodayHotNewsChildController alloc]init];
         yule.title = @"娱乐";
+        yule.newsType = @"yule";
         [_tabbarView addSubItemWithViewController:yule];
         
-        ELWeiXinNewsListController * tiyu = [[ELWeiXinNewsListController alloc]init];
+        ELTodayHotNewsChildController * tiyu = [[ELTodayHotNewsChildController alloc]init];
         tiyu.title = @"体育";
+        tiyu.newsType = @"tiyu";
         [_tabbarView addSubItemWithViewController:tiyu];
         
-        ELWeiXinNewsListController * junshi = [[ELWeiXinNewsListController alloc]init];
+        ELTodayHotNewsChildController * junshi = [[ELTodayHotNewsChildController alloc]init];
         junshi.title = @"军事";
+        junshi.newsType = @"junshi";
         [_tabbarView addSubItemWithViewController:junshi];
         
-        ELWeiXinNewsListController * keji = [[ELWeiXinNewsListController alloc]init];
+        ELTodayHotNewsChildController * keji = [[ELTodayHotNewsChildController alloc]init];
         keji.title = @"科技";
+        keji.newsType = @"keji";
         [_tabbarView addSubItemWithViewController:keji];
         
-        ELWeiXinNewsListController * caijing = [[ELWeiXinNewsListController alloc]init];
+        ELTodayHotNewsChildController * caijing = [[ELTodayHotNewsChildController alloc]init];
         caijing.title = @"财经";
+        caijing.newsType = @"caijing";
         [_tabbarView addSubItemWithViewController:caijing];
         
-        ELWeiXinNewsListController * shishang = [[ELWeiXinNewsListController alloc]init];
+        ELTodayHotNewsChildController * shishang = [[ELTodayHotNewsChildController alloc]init];
         shishang.title = @"时尚";
+        shishang.newsType = @"shishang";
         [_tabbarView addSubItemWithViewController:shishang];
     }
     return _tabbarView;

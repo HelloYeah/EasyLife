@@ -169,6 +169,7 @@
 		B453EA891DAA197800A0A8DC /* ELWeiXinNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA881DAA197800A0A8DC /* ELWeiXinNewsListCell.m */; };
 		B453EA8C1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA8B1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m */; };
 		B453EA8F1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA8E1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m */; };
+		B453EA921DAA268D00A0A8DC /* ELTodayHotNewsChildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA911DAA268D00A0A8DC /* ELTodayHotNewsChildCell.m */; };
 		B493E19D1D9CA7BF0046C81A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E19C1D9CA7BF0046C81A /* main.m */; };
 		B493E1A01D9CA7BF0046C81A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E19F1D9CA7BF0046C81A /* AppDelegate.m */; };
 		B493E1A81D9CA7BF0046C81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B493E1A71D9CA7BF0046C81A /* Assets.xcassets */; };
@@ -517,6 +518,8 @@
 		B453EA8B1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTodayHotNewsChildController.m; sourceTree = "<group>"; };
 		B453EA8D1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTodayHotNewsChildModel.h; sourceTree = "<group>"; };
 		B453EA8E1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTodayHotNewsChildModel.m; sourceTree = "<group>"; };
+		B453EA901DAA268D00A0A8DC /* ELTodayHotNewsChildCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTodayHotNewsChildCell.h; sourceTree = "<group>"; };
+		B453EA911DAA268D00A0A8DC /* ELTodayHotNewsChildCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTodayHotNewsChildCell.m; sourceTree = "<group>"; };
 		B493E1981D9CA7BF0046C81A /* EasyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B493E19C1D9CA7BF0046C81A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B493E19E1D9CA7BF0046C81A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -1466,6 +1469,8 @@
 			children = (
 				B453EA871DAA197800A0A8DC /* ELWeiXinNewsListCell.h */,
 				B453EA881DAA197800A0A8DC /* ELWeiXinNewsListCell.m */,
+				B453EA901DAA268D00A0A8DC /* ELTodayHotNewsChildCell.h */,
+				B453EA911DAA268D00A0A8DC /* ELTodayHotNewsChildCell.m */,
 				B453EA7B1DAA163900A0A8DC /* HYTabbarView.h */,
 				B453EA7C1DAA163900A0A8DC /* HYTabbarView.m */,
 				B453EA7E1DAA164F00A0A8DC /* HYTabbarCollectionCell.h */,
@@ -1662,6 +1667,7 @@
 				B44769371DA8A31E0014E9BB /* YYMemoryCache.m in Sources */,
 				B44769811DA8A4450014E9BB /* SDWebImageDecoder.m in Sources */,
 				B44769481DA8A31E0014E9BB /* YYTextAttribute.m in Sources */,
+				B453EA921DAA268D00A0A8DC /* ELTodayHotNewsChildCell.m in Sources */,
 				B453EA771DAA117F00A0A8DC /* ELWeiXinNewsListController.m in Sources */,
 				B44768DC1DA8A3060014E9BB /* UIImage+YYWebImage.m in Sources */,
 				B453EA861DAA196B00A0A8DC /* ELWeiXinNewsModel.m in Sources */,

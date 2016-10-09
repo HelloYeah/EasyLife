@@ -13,10 +13,12 @@
 
 UIKIT_EXTERN NSString *const kNHHomeServiceListAPI;
 
-
 #pragma mark - READ / 阅读类
+
 /** 微信精选*/
 UIKIT_EXTERN NSString *const kELWeiXinNewsListAPI;
+/** 今日资讯*/
+UIKIT_EXTERN NSString *const kELTodayHotNewsListAPI;
 
 
 #pragma mark - PUBLISH / 发布
