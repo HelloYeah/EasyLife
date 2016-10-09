@@ -19,7 +19,8 @@ UIKIT_EXTERN NSString *const kNHHomeServiceListAPI;
 UIKIT_EXTERN NSString *const kELWeiXinNewsListAPI;
 /** 今日资讯*/
 UIKIT_EXTERN NSString *const kELTodayHotNewsListAPI;
-
+/** 段子趣图*/
+UIKIT_EXTERN NSString *const kELJokerListAPI;
 
 #pragma mark - PUBLISH / 发布
 /** 内涵用户发布动态可选择的热吧列表*/

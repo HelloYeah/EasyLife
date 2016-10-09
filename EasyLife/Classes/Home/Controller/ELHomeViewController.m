@@ -7,6 +7,7 @@
 //
 
 #import "ELHomeViewController.h"
+#import "ELJokerController.h"
 
 @interface ELHomeViewController ()
 
@@ -30,7 +31,8 @@
 
 - (void)btnClick{
     
-    [self.navigationController pushViewController:[[UIViewController alloc]init] animated:YES];
+    ELJokerController * jokerVC = [[ELJokerController alloc]init];
+    [self.navigationController pushViewController:jokerVC animated:YES];
 }
 
 

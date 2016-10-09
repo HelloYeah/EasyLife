@@ -15,5 +15,7 @@
 NSString *const kELWeiXinNewsListAPI = @"http://v.juhe.cn/weixin/query";
 /** 今日资讯*/
 NSString *const kELTodayHotNewsListAPI = @"http://v.juhe.cn/toutiao/index";
+/** 段子趣图 */
+NSString *const kELJokerListAPI = @"http://japi.juhe.cn/joke/img/text.from";
 
 @end

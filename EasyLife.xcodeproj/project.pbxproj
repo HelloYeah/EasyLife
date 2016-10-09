@@ -170,6 +170,9 @@
 		B453EA8C1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA8B1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m */; };
 		B453EA8F1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA8E1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m */; };
 		B453EA921DAA268D00A0A8DC /* ELTodayHotNewsChildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA911DAA268D00A0A8DC /* ELTodayHotNewsChildCell.m */; };
+		B453EA951DAA4A0900A0A8DC /* ELJokerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA941DAA4A0900A0A8DC /* ELJokerController.m */; };
+		B453EA981DAA4AE000A0A8DC /* ELJokerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA971DAA4AE000A0A8DC /* ELJokerModel.m */; };
+		B453EA9B1DAA4B4600A0A8DC /* ELJokerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA9A1DAA4B4600A0A8DC /* ELJokerCell.m */; };
 		B493E19D1D9CA7BF0046C81A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E19C1D9CA7BF0046C81A /* main.m */; };
 		B493E1A01D9CA7BF0046C81A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E19F1D9CA7BF0046C81A /* AppDelegate.m */; };
 		B493E1A81D9CA7BF0046C81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B493E1A71D9CA7BF0046C81A /* Assets.xcassets */; };
@@ -520,6 +523,12 @@
 		B453EA8E1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTodayHotNewsChildModel.m; sourceTree = "<group>"; };
 		B453EA901DAA268D00A0A8DC /* ELTodayHotNewsChildCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTodayHotNewsChildCell.h; sourceTree = "<group>"; };
 		B453EA911DAA268D00A0A8DC /* ELTodayHotNewsChildCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTodayHotNewsChildCell.m; sourceTree = "<group>"; };
+		B453EA931DAA4A0900A0A8DC /* ELJokerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELJokerController.h; sourceTree = "<group>"; };
+		B453EA941DAA4A0900A0A8DC /* ELJokerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELJokerController.m; sourceTree = "<group>"; };
+		B453EA961DAA4AE000A0A8DC /* ELJokerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELJokerModel.h; sourceTree = "<group>"; };
+		B453EA971DAA4AE000A0A8DC /* ELJokerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELJokerModel.m; sourceTree = "<group>"; };
+		B453EA991DAA4B4600A0A8DC /* ELJokerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELJokerCell.h; sourceTree = "<group>"; };
+		B453EA9A1DAA4B4600A0A8DC /* ELJokerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELJokerCell.m; sourceTree = "<group>"; };
 		B493E1981D9CA7BF0046C81A /* EasyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B493E19C1D9CA7BF0046C81A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B493E19E1D9CA7BF0046C81A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -1342,6 +1351,8 @@
 			children = (
 				B44768301DA8890C0014E9BB /* ELHomeViewController.h */,
 				B44768311DA8890C0014E9BB /* ELHomeViewController.m */,
+				B453EA931DAA4A0900A0A8DC /* ELJokerController.h */,
+				B453EA941DAA4A0900A0A8DC /* ELJokerController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1349,6 +1360,8 @@
 		B493E1D11D9CA8590046C81A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B453EA961DAA4AE000A0A8DC /* ELJokerModel.h */,
+				B453EA971DAA4AE000A0A8DC /* ELJokerModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1356,6 +1369,8 @@
 		B493E1D21D9CA8590046C81A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B453EA991DAA4B4600A0A8DC /* ELJokerCell.h */,
+				B453EA9A1DAA4B4600A0A8DC /* ELJokerCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1670,6 +1685,7 @@
 				B453EA921DAA268D00A0A8DC /* ELTodayHotNewsChildCell.m in Sources */,
 				B453EA771DAA117F00A0A8DC /* ELWeiXinNewsListController.m in Sources */,
 				B44768DC1DA8A3060014E9BB /* UIImage+YYWebImage.m in Sources */,
+				B453EA981DAA4AE000A0A8DC /* ELJokerModel.m in Sources */,
 				B453EA861DAA196B00A0A8DC /* ELWeiXinNewsModel.m in Sources */,
 				B44769B01DA8A4540014E9BB /* NSArray+MASAdditions.m in Sources */,
 				B44769541DA8A31E0014E9BB /* YYTextSelectionView.m in Sources */,
@@ -1681,6 +1697,7 @@
 				B44769501DA8A31E0014E9BB /* YYTextMagnifier.m in Sources */,
 				B447687C1DA894F50014E9BB /* NSObject+MJClass.m in Sources */,
 				B4476A221DA8D07E0014E9BB /* UIScrollView+MJRefresh.m in Sources */,
+				B453EA9B1DAA4B4600A0A8DC /* ELJokerCell.m in Sources */,
 				B4476A121DA8D07E0014E9BB /* MJRefreshComponent.m in Sources */,
 				B447697F1DA8A4450014E9BB /* SDImageCache.m in Sources */,
 				B4476A161DA8D07E0014E9BB /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1766,6 +1783,7 @@
 				B44769AE1DA8A4540014E9BB /* MASViewAttribute.m in Sources */,
 				B493E19D1D9CA7BF0046C81A /* main.m in Sources */,
 				B453EA741DA9EAC400A0A8DC /* ELCommonAPIConstant.m in Sources */,
+				B453EA951DAA4A0900A0A8DC /* ELJokerController.m in Sources */,
 				B44769D21DA8CF720014E9BB /* NSString+Encrypt.m in Sources */,
 				B453EA7D1DAA163900A0A8DC /* HYTabbarView.m in Sources */,
 				B44769511DA8A31E0014E9BB /* YYTextParser.m in Sources */,
