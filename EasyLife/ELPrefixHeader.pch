@@ -15,6 +15,7 @@
 #import "Masonry.h"
 #import "UIImageView+WebCache.h"
 #import "UIView+Frame.h"
+#import "ELCommonAPIConstant.h"
 
 
 #endif /* ELPrefixHeader_pch */

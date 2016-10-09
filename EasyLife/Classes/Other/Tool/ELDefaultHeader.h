@@ -64,7 +64,7 @@
 /***  当前屏幕高度 */
 #define kScreenHeight  [[UIScreen mainScreen] bounds].size.height
 /***  屏宽比例 */
-#define kScreenWidthRatio (kScreenWidth / 320)
+#define kScreenWidthRatio (kScreenWidth / kiPhone6_W)
 /***  粗体 */
 #define kBoldFont(size) [UIFont boldSystemFontOfSize:size * kScreenWidthRatio]
 /***  普通字体 */

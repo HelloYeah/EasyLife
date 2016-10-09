@@ -10,8 +10,10 @@
 #import "ELBaseRequest.h"
 #import "ELWeiXinNewsModel.h"
 #import "UIImageView+YYWebImage.h"
-
+#import "ELWeiXinNewsListCell.h"
 #import "ELWeiXinNewsDetailController.h"
+
+static const NSString * kWeiXinNewsAppKey = @"8d99c5ce4d8d02ee59ecf1a5e13f77e0";
 
 @interface ELLifeViewController ()
 @property (nonatomic,strong) NSMutableArray * dataArray;
@@ -27,6 +29,7 @@
     [super viewDidLoad];
     
     self.pageIndex = 1;
+    self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
     [self loadData];
     
     
@@ -45,7 +48,7 @@
         ELBaseRequest * request = [ELBaseRequest el_request];
         _request = request;
     }
-    _request.el_url = [NSString stringWithFormat:@"%@?pno=%ld&key=%@",@"http://v.juhe.cn/weixin/query",self.pageIndex,@"8d99c5ce4d8d02ee59ecf1a5e13f77e0"];
+    _request.el_url = [NSString stringWithFormat:@"%@?pno=%ld&key=%@",kELWeiXinNewsListAPI,self.pageIndex,kWeiXinNewsAppKey];
     return _request;
 }
 
@@ -80,22 +83,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    NSString * const ID = @"cell";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    NSString * const ID = @"ELWeiXinNewsCell";
+    ELWeiXinNewsListCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle: UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[ELWeiXinNewsListCell alloc]initWithStyle: UITableViewCellStyleDefault reuseIdentifier:ID];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     ELWeiXinNewsModel * model = self.dataArray[indexPath.row];
-    cell.textLabel.text = model.title;
-    cell.textLabel.numberOfLines = 0;
-    NSString * imageUrl = [model.firstImg stringByReplacingOccurrencesOfString:@"\\" withString:@""];
-
-//    [[YYWebImageManager sharedManager] requestImageWithURL:[NSURL URLWithString:imageUrl] options:YYWebImageOptionUseNSURLCache progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
-//        cell.imageView.image = image;
-//    }];
-    [cell.imageView yy_setImageWithURL:[NSURL URLWithString:imageUrl] placeholder:[UIImage imageNamed:@"refreshjoke_loading_0"]];
-    
+    cell.newsModel = model;
     return cell;
 }
 

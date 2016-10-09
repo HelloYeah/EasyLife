@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class ELWeiXinNewsModel;
+
 @interface ELWeiXinNewsListCell : UITableViewCell
+
+@property (nonatomic,strong) ELWeiXinNewsModel * newsModel;
 
 @end

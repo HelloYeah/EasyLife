@@ -159,6 +159,7 @@
 		B4476A2D1DA8D1940014E9BB /* ELUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4476A2C1DA8D1940014E9BB /* ELUserInfoModel.m */; };
 		B4476A301DA8D24D0014E9BB /* ELCommonConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B4476A2F1DA8D24D0014E9BB /* ELCommonConstant.m */; };
 		B4476A331DA8D3840014E9BB /* ELRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B4476A321DA8D3840014E9BB /* ELRefreshFooter.m */; };
+		B453EA741DA9EAC400A0A8DC /* ELCommonAPIConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA731DA9EAC400A0A8DC /* ELCommonAPIConstant.m */; };
 		B4888E721DA8D91A005034FC /* ELWeiXinNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4888E711DA8D91A005034FC /* ELWeiXinNewsModel.m */; };
 		B4888E751DA8EAA5005034FC /* ELWeiXinNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4888E741DA8EAA5005034FC /* ELWeiXinNewsDetailController.m */; };
 		B4888E781DA8F580005034FC /* ELWeiXinNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4888E771DA8F580005034FC /* ELWeiXinNewsListCell.m */; };
@@ -490,6 +491,8 @@
 		B4476A2F1DA8D24D0014E9BB /* ELCommonConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCommonConstant.m; sourceTree = "<group>"; };
 		B4476A311DA8D3840014E9BB /* ELRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELRefreshFooter.h; sourceTree = "<group>"; };
 		B4476A321DA8D3840014E9BB /* ELRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELRefreshFooter.m; sourceTree = "<group>"; };
+		B453EA721DA9EAC400A0A8DC /* ELCommonAPIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCommonAPIConstant.h; sourceTree = "<group>"; };
+		B453EA731DA9EAC400A0A8DC /* ELCommonAPIConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCommonAPIConstant.m; sourceTree = "<group>"; };
 		B4888E701DA8D91A005034FC /* ELWeiXinNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsModel.h; sourceTree = "<group>"; };
 		B4888E711DA8D91A005034FC /* ELWeiXinNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELWeiXinNewsModel.m; sourceTree = "<group>"; };
 		B4888E731DA8EAA5005034FC /* ELWeiXinNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELWeiXinNewsDetailController.h; sourceTree = "<group>"; };
@@ -668,6 +671,8 @@
 				B44768821DA8956F0014E9BB /* ELFileCacheManager.m */,
 				B44768841DA895B60014E9BB /* NSFileManager+Paths.h */,
 				B44768851DA895B60014E9BB /* NSFileManager+Paths.m */,
+				B453EA721DA9EAC400A0A8DC /* ELCommonAPIConstant.h */,
+				B453EA731DA9EAC400A0A8DC /* ELCommonAPIConstant.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1720,6 +1725,7 @@
 				B44769AD1DA8A4540014E9BB /* MASLayoutConstraint.m in Sources */,
 				B44769AE1DA8A4540014E9BB /* MASViewAttribute.m in Sources */,
 				B493E19D1D9CA7BF0046C81A /* main.m in Sources */,
+				B453EA741DA9EAC400A0A8DC /* ELCommonAPIConstant.m in Sources */,
 				B44769D21DA8CF720014E9BB /* NSString+Encrypt.m in Sources */,
 				B44769511DA8A31E0014E9BB /* YYTextParser.m in Sources */,
 				B447687A1DA894F50014E9BB /* MJPropertyKey.m in Sources */,
