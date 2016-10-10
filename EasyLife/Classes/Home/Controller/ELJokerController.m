@@ -62,13 +62,13 @@ static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2";
     
     if(segmentedControl.selectedSegmentIndex == 0){
         self.isPic = YES;
-        [self.tableView reloadData];
     }else{
         self.isPic = NO;
         if(self.textDataArray.count == 0){
             [self loadData];
         }
     }
+    [self.tableView reloadData];
 }
 
 
