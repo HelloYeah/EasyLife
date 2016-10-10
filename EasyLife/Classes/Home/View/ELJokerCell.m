@@ -10,11 +10,13 @@
 #import "UIView+Layer.h"
 #import "UIImageView+YYWebImage.h"
 #import "ELJokerModel.h"
+#import "UIImage+GIF.h"
 
 
 @interface ELJokerCell ()
 @property (nonatomic,strong) UIView * bgView;
 @property (nonatomic,strong) UIImageView * image_view;
+@property (nonatomic,strong) UIWebView * webView;
 @property (nonatomic,strong) UILabel * titleLabel;
 @property (nonatomic,strong) UILabel * timeLabel;
 @end
@@ -41,6 +43,12 @@
     self.image_view.contentMode = UIViewContentModeTop;
     self.image_view.clipsToBounds = YES;
     
+    self.webView = [[UIWebView alloc]init];
+    self.webView.scrollView.scrollEnabled = NO;
+    self.webView.opaque = NO;
+    self.webView.backgroundColor = kClearColor;
+    [self.bgView addSubview:self.webView];
+
     self.titleLabel = [[UILabel alloc]init];
     [self.bgView addSubview:self.titleLabel];
     self.titleLabel.numberOfLines = 0;
@@ -54,15 +62,27 @@
 
 }
 
+
+
 - (void)setJokerModel:(ELJokerModel *)jokerModel{
     
     _jokerModel = jokerModel;
     
     NSString * imageUrl = [jokerModel.url stringByReplacingOccurrencesOfString:@"\\" withString:@""];
+    if ([[imageUrl substringFromIndex:imageUrl.length - 3] isEqualToString:@"gif"]) {
+        self.webView.hidden = NO;
+        NSURL * url = [NSURL URLWithString:imageUrl];
+        NSURLRequest * request = [NSURLRequest requestWithURL:url];
+        [self.webView loadRequest:request];
+    }else{
+        self.webView.hidden = YES;
+    }
 //    [self.image_view  yy_setImageWithURL:[NSURL URLWithString:imageUrl] placeholder:[UIImage imageNamed:@"refreshjoke_loading_0"]];
     [self.image_view yy_setImageWithURL:[NSURL URLWithString:imageUrl] placeholder:[UIImage imageNamed:@"refreshjoke_loading_0"] options:YYWebImageOptionShowNetworkActivity completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
         self.image_view.image = image;
     }];
+    
+    
     
     self.titleLabel.text = jokerModel.content;
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self.titleLabel.text];
@@ -96,6 +116,15 @@
                                       self.timeLabel.width,
                                       self.timeLabel.height);
 
+    if (self.webView.hidden == NO) {
+        self.webView.frame = CGRectMake(kInsetMargin,
+                                        self.timeLabel.bottom + 0.5 * kInsetMargin,
+                                        self.bgView.width - 2 * kInsetMargin,
+                                        self.bgView.height - self.timeLabel.bottom - 2 * kInsetMargin);
+        self.image_view.hidden = YES;
+        return;
+    }
+    
     if (_jokerModel.url.length > 0) {
         self.image_view.hidden = NO;
         self.image_view.frame = CGRectMake(kInsetMargin,
