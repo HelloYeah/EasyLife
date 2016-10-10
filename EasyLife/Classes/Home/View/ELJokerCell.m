@@ -9,18 +9,14 @@
 #import "ELJokerCell.h"
 #import "UIView+Layer.h"
 #import "UIImageView+YYWebImage.h"
-//#import "UIImage+GIF.h"
 #import "ELJokerModel.h"
 
-#define kContentBgLeftAndRightSpace kLeftMargin * kScreenWidthRatio
-#define kContentBgTopAndBottomSpace kLeftMargin * kScreenWidthRatio * 0.5
-#define kInsetMargin 10 * kScreenWidthRatio
+
 @interface ELJokerCell ()
 @property (nonatomic,strong) UIView * bgView;
 @property (nonatomic,strong) UIImageView * image_view;
 @property (nonatomic,strong) UILabel * titleLabel;
 @property (nonatomic,strong) UILabel * timeLabel;
-//@property (nonatomic,strong) UILabel * souceLabel;
 @end
 
 @implementation ELJokerCell
@@ -42,23 +38,20 @@
     
     self.image_view = [[UIImageView alloc]init];
     [self.bgView addSubview:self.image_view];
-    self.image_view.contentMode = UIViewContentModeScaleToFill;
+    self.image_view.contentMode = UIViewContentModeTop;
     self.image_view.clipsToBounds = YES;
     
     self.titleLabel = [[UILabel alloc]init];
     [self.bgView addSubview:self.titleLabel];
-    self.titleLabel.numberOfLines = 2;
-    self.titleLabel.font = kFont(15);
+    self.titleLabel.numberOfLines = 0;
+    self.titleLabel.font = kFont(18);
+    self.titleLabel.textColor = kTextColor;
     
     self.timeLabel = [[UILabel alloc]init];
     [self.bgView addSubview:self.timeLabel];
     self.timeLabel.font = kFont(12);
-    self.timeLabel.textColor = kDarkGrayColor;
-    
-//    self.souceLabel = [[UILabel alloc]init];
-//    [self.bgView addSubview:self.souceLabel];
-//    self.souceLabel.font = kFont(12);
-//    self.souceLabel.textColor = kDarkGrayColor;
+    self.timeLabel.textColor = kDetailTextColor;
+
 }
 
 - (void)setJokerModel:(ELJokerModel *)jokerModel{
@@ -66,13 +59,19 @@
     _jokerModel = jokerModel;
     
     NSString * imageUrl = [jokerModel.url stringByReplacingOccurrencesOfString:@"\\" withString:@""];
-    [self.image_view  yy_setImageWithURL:[NSURL URLWithString:imageUrl] placeholder:[UIImage imageNamed:@"refreshjoke_loading_0"]];
+//    [self.image_view  yy_setImageWithURL:[NSURL URLWithString:imageUrl] placeholder:[UIImage imageNamed:@"refreshjoke_loading_0"]];
+    [self.image_view yy_setImageWithURL:[NSURL URLWithString:imageUrl] placeholder:[UIImage imageNamed:@"refreshjoke_loading_0"] options:YYWebImageOptionShowNetworkActivity completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+        self.image_view.image = image;
+    }];
     
     self.titleLabel.text = jokerModel.content;
-    NSLog(@"%@",jokerModel.content);
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self.titleLabel.text];
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineSpacing:kLineSpace];//调整行间距
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [self.titleLabel.text length])];
+    self.titleLabel.attributedText = attributedString;
+  
     self.timeLabel.text = jokerModel.updatetime;
-//    self.souceLabel.text = [NSString stringWithFormat:@"来源:%@",jokerModel.updatetime];
-    
 }
 
 - (void)layoutSubviews{
@@ -91,20 +90,20 @@
                                        titleLabelSize.height);
     
     [self.timeLabel sizeToFit];
-    self.timeLabel.frame = CGRectMake(kInsetMargin,
+    self.timeLabel.frame = CGRectMake(self.bgView.width - kInsetMargin - self.timeLabel.width,
                                       self.titleLabel.bottom + 0.5 * kInsetMargin,
                                       self.timeLabel.width,
                                       self.timeLabel.height);
-//    [self.souceLabel sizeToFit];
-//    self.souceLabel.frame = CGRectMake(self.bgView.width - kInsetMargin - self.souceLabel.width,
-//                                       self.titleLabel.bottom + 0.5 * kInsetMargin,
-//                                       self.souceLabel.width,
-//                                       self.souceLabel.height);
-    
-    self.image_view.frame = CGRectMake(kInsetMargin,
-                                       self.timeLabel.bottom + 0.5 * kInsetMargin,
-                                       self.bgView.width - 2 * kInsetMargin,
-                                       self.bgView.height - self.timeLabel.bottom - 2 * kInsetMargin);
+
+    if (_jokerModel.url.length > 0) {
+        self.image_view.hidden = NO;
+        self.image_view.frame = CGRectMake(kInsetMargin,
+                                           self.timeLabel.bottom + 0.5 * kInsetMargin,
+                                           self.bgView.width - 2 * kInsetMargin,
+                                           self.bgView.height - self.timeLabel.bottom - 2 * kInsetMargin);
+    }else{
+        self.image_view.hidden = YES;
+    }
 }
 
 @end
