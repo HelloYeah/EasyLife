@@ -1,9 +1,9 @@
 //
 //  NHCustomLoadingAnimationView.m
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/9/5.
-//  Copyright © 2016年 Charles. All rights reserved.
+//  Created by LiangYe on 16/9/5.
+//  Copyright © 2016年 LiangYe. All rights reserved.
 //
 
 #import "ELCustomLoadingAnimationView.h"

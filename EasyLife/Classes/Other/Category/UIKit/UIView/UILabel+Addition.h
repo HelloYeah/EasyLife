@@ -1,9 +1,9 @@
 //
 //  UILabel+Addition.h
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/4/26.
-//  Copyright © 2016年 Com.Charles. All rights reserved.
+//  Created by LiangYe on 16/4/26.
+//  Copyright © 2016年 Com.LiangYe. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

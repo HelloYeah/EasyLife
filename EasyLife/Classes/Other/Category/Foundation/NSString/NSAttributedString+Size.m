@@ -1,9 +1,9 @@
 //
 //  NSAttributedString+Size.m
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/8/30.
-//  Copyright © 2016年 Com.Charles. All rights reserved.
+//  Created by LiangYe on 16/8/30.
+//  Copyright © 2016年 Com.LiangYe. All rights reserved.
 //
 
 #import "NSAttributedString+Size.h"

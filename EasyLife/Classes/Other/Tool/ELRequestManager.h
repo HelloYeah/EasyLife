@@ -1,9 +1,9 @@
 //
 //  ELRequestManager.h
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/8/30.
-//  Copyright © 2016年 Charles. All rights reserved.
+//  Created by LiangYe on 16/8/30.
+//  Copyright © 2016年 LiangYe. All rights reserved.
 //  请求管理类
 
 #import <Foundation/Foundation.h>

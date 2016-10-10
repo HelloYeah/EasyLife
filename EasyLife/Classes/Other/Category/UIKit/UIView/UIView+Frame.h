@@ -1,9 +1,9 @@
 //
 //  UIView+Frame.h
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/9/1.
-//  Copyright © 2016年 Charles. All rights reserved.
+//  Created by LiangYe on 16/9/1.
+//  Copyright © 2016年 LiangYe. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

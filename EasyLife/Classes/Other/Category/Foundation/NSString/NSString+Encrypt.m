@@ -2,8 +2,8 @@
 //  NSString+Encrypt.m
 //
 //
-//  Created by Charles on 14/9/22.
-//  Copyright © 2015年 Com.Charles. All rights reserved.
+//  Created by LiangYe on 14/9/22.
+//  Copyright © 2015年 Com.LiangYe. All rights reserved.
 //
 
 #import "NSString+Encrypt.h"

@@ -1,9 +1,9 @@
 //
 //  UIView+Tap.m
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/4/2.
-//  Copyright © 2016年 Com.Charles. All rights reserved.
+//  Created by LiangYe on 16/4/2.
+//  Copyright © 2016年 Com.LiangYe. All rights reserved.
 //
 
 #import "UIView+Tap.h"

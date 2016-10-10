@@ -1,9 +1,9 @@
 //
 //  ELBaseRequest.m
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/8/30.
-//  Copyright © 2016年 Charles. All rights reserved.
+//  Created by LiangYe on 16/8/30.
+//  Copyright © 2016年 LiangYe. All rights reserved.
 //
 
 #import "ELBaseRequest.h"

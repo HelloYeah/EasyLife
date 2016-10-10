@@ -1,9 +1,9 @@
 //
 //  MBProgressHUD+NHAddition.m
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/9/11.
-//  Copyright © 2016年 Charles. All rights reserved.
+//  Created by LiangYe on 16/9/11.
+//  Copyright © 2016年 LiangYe. All rights reserved.
 //
 
 #import "MBProgressHUD+NHAddition.h"

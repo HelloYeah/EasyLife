@@ -2,8 +2,8 @@
 //  NSAttributedString+Size.h
 //  
 //
-//  Created by Charles on 16/8/30.
-//  Copyright © 2016年 Com.Charles. All rights reserved.
+//  Created by LiangYe on 16/8/30.
+//  Copyright © 2016年 Com.LiangYe. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

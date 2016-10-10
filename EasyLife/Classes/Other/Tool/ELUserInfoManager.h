@@ -1,9 +1,9 @@
 //
 //  ELUserInfoManager.h
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/9/7.
-//  Copyright © 2016年 Charles. All rights reserved.
+//  Created by LiangYe on 16/9/7.
+//  Copyright © 2016年 LiangYe. All rights reserved.
 //  用户信息管理类
 
 #import <Foundation/Foundation.h>

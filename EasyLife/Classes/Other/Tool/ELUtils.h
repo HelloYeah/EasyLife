@@ -1,9 +1,9 @@
 //
 //  ELUtils.h
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/9/3.
-//  Copyright © 2016年 Charles. All rights reserved.
+//  Created by LiangYe on 16/9/3.
+//  Copyright © 2016年 LiangYe. All rights reserved.
 //  全局工具类
  
 #import <UIKit/UIKit.h>

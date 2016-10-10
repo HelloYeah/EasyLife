@@ -1,9 +1,9 @@
 //
 //  NSNotificationCenter+Addition.m
-//  NeiHan
+//  EasyLife
 //
-//  Created by Charles on 16/3/16.
-//  Copyright © 2016年 Com.Charles. All rights reserved.
+//  Created by LiangYe on 16/3/16.
+//  Copyright © 2016年 Com.LiangYe. All rights reserved.
 //
 
 #import "NSNotificationCenter+Addition.h"
