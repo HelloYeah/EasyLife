@@ -37,10 +37,17 @@ static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2";
     
     [self.view addSubview:self.tableView];
     
+    UISegmentedControl * segmentedControl = [[UISegmentedControl alloc]initWithItems:@[@"趣图",@"爆笑段子"]];
+    segmentedControl.frame = CGRectMake(0, 0, kScreenWidth * 0.35, kNavigationBarHeight * 0.8);
+    segmentedControl.tintColor = kCommonTintColor;
+    segmentedControl.selectedSegmentIndex = 0;
+    self.navigationItem.titleView = segmentedControl;
+    [segmentedControl addTarget:self action:@selector(changeSelectedIndex:) forControlEvents:UIControlEventValueChanged];
+    [self changeSelectedIndex:segmentedControl];
+
     [self showLoadingAnimation];
     self.picPageIndex = 1;
     self.textPageIndex = 1;
-    self.isPic = YES;
     [self loadData];
     
     [ELUtils addLoadMoreForScrollView:self.tableView loadMoreCallBack:^{
@@ -50,6 +57,18 @@ static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2";
     [ELUtils addPullRefreshForScrollView:self.tableView pullRefreshCallBack:^{
         [self pullRefresh];
     }];
+}
+- (void)changeSelectedIndex:(UISegmentedControl *)segmentedControl{
+    
+    if(segmentedControl.selectedSegmentIndex == 0){
+        self.isPic = YES;
+        [self.tableView reloadData];
+    }else{
+        self.isPic = NO;
+        if(self.textDataArray.count == 0){
+            [self loadData];
+        }
+    }
 }
 
 
@@ -135,56 +154,6 @@ static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2";
     
     ELJokerModel * model = self.dataArray[indexPath.row];
     return model.rowHeight;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    
-    return self.headerView;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
-    return kHeaderViewHeight;
-}
-
-- (UIView *)headerView{
-    
-    if (_headerView == nil) {
-        _headerView = [[UIView alloc] initWithFrame:CGRectMake(kContentBgLeftAndRightSpace,
-                                                               0,
-                                                               kScreenWidth - 2 * kContentBgLeftAndRightSpace,
-                                                               kHeaderViewHeight)];
-        UIButton * picJoker = [UIButton buttonWithType:UIButtonTypeCustom];
-        [picJoker setTitle:@"趣图" forState:UIControlStateNormal];
-        [picJoker setBackgroundColor:kCommonRedColor];
-        [picJoker setTitleColor:kYellowColor forState:UIControlStateSelected];
-        picJoker.titleLabel.font = kFont(18);
-        [picJoker sizeToFit];
-        picJoker.width = _headerView.width * 0.47;
-        picJoker.centerY = _headerView.centerY;
-        picJoker.centerX = _headerView.centerX * 0.52;
-        [picJoker setLayerCornerRadius:4 * kScreenWidthRatio borderWidth:kLineHeight borderColor:kCommonRedColor];
-        [picJoker addTarget:self action:@selector(changeType:) forControlEvents:UIControlEventTouchUpInside];
-        [_headerView addSubview:picJoker];
-        self.selectedBtn = picJoker;
-        
-        UIButton * textJoker = [UIButton buttonWithType:UIButtonTypeCustom];
-        [textJoker setTitle:@"爆笑段子" forState:UIControlStateNormal];
-        [textJoker setBackgroundColor:kCommonRedColor];
-        [textJoker setTitleColor:kYellowColor forState:UIControlStateSelected];
-        textJoker.titleLabel.font = kFont(18);
-        [textJoker sizeToFit];
-        textJoker.width = _headerView.width * 0.47;
-        textJoker.centerY = _headerView.centerY;
-        textJoker.centerX = _headerView.centerX * 1.49;
-        [textJoker setLayerCornerRadius:4 * kScreenWidthRatio borderWidth:kLineHeight borderColor:kLineBgColor];
-        [textJoker addTarget:self action:@selector(changeType:) forControlEvents:UIControlEventTouchUpInside];
-        [_headerView addSubview:textJoker];
-        
-        _headerView.backgroundColor = kWhiteColor;
-        
-    }
-    return _headerView;
 }
 
 - (void)changeType:(UIButton *)btn{

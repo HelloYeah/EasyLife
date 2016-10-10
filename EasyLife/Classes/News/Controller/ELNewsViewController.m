@@ -24,7 +24,7 @@
     [super viewDidLoad];
 
     UISegmentedControl * segmentedControl = [[UISegmentedControl alloc]initWithItems:@[@"今日资讯",@"微信精选"]];
-    segmentedControl.frame = CGRectMake(0, 0, kScreenWidth * 0.25, kNavigationBarHeight * 0.8);
+    segmentedControl.frame = CGRectMake(0, 0, kScreenWidth * 0.35, kNavigationBarHeight * 0.8);
     segmentedControl.tintColor = kCommonTintColor;
     segmentedControl.selectedSegmentIndex = 0;
     self.navigationItem.titleView = segmentedControl;

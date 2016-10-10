@@ -29,6 +29,7 @@
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.42f green:0.33f blue:0.27f alpha:1.00f]];
     
     // 拿到整个导航控制器的外观
+    
     UIBarButtonItem * item = [UIBarButtonItem appearance];
     item.tintColor = [UIColor colorWithRed:0.42f green:0.33f blue:0.27f alpha:1.00f];
     // 设置字典的字体大小
@@ -39,12 +40,18 @@
     // 将字典给item
     [item setTitleTextAttributes:atts forState:UIControlStateNormal];
     
+    
+    
     [[UINavigationBar appearance] setShadowImage:[UIImage new]];
     [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+  
 }
 
 - (void)didReceiveMemoryWarning {

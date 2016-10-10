@@ -165,6 +165,7 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     [self.view bringSubviewToFront:self.animationView];
+//    [self.navigationItem.leftBarButtonItem setTitlePositionAdjustment:UIOffsetMake(0, -10000) forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)loadData {
