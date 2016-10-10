@@ -32,6 +32,7 @@
 - (void)btnClick{
     
     ELJokerController * jokerVC = [[ELJokerController alloc]init];
+    jokerVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:jokerVC animated:YES];
 }
 

@@ -94,7 +94,7 @@
         }
     }];
     [footer setTitle:@"" forState:MJRefreshStateIdle];
-    [footer setTitle:@"内涵正在为您加载数据" forState:MJRefreshStateRefreshing];
+    [footer setTitle:@"正在为您加载数据" forState:MJRefreshStateRefreshing];
     [footer setTitle:@"没有更多了~" forState:MJRefreshStateNoMoreData];
     footer.stateLabel.textColor = kRGBColor(90, 90, 90);
     footer.stateLabel.font = kFont(13.0);

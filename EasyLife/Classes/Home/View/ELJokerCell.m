@@ -68,6 +68,7 @@
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self.titleLabel.text];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     [paragraphStyle setLineSpacing:kLineSpace];//调整行间距
+    [paragraphStyle setLineBreakMode:NSLineBreakByCharWrapping];
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [self.titleLabel.text length])];
     self.titleLabel.attributedText = attributedString;
   

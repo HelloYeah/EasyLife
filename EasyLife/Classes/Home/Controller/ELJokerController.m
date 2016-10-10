@@ -37,7 +37,7 @@ static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2";
     
     [self.view addSubview:self.tableView];
     
-    UISegmentedControl * segmentedControl = [[UISegmentedControl alloc]initWithItems:@[@"趣图",@"爆笑段子"]];
+    UISegmentedControl * segmentedControl = [[UISegmentedControl alloc]initWithItems:@[@"趣图",@"段子"]];
     segmentedControl.frame = CGRectMake(0, 0, kScreenWidth * 0.35, kNavigationBarHeight * 0.8);
     segmentedControl.tintColor = kCommonTintColor;
     segmentedControl.selectedSegmentIndex = 0;

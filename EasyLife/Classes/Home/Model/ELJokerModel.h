@@ -9,7 +9,7 @@
 #import "ELBaseModel.h"
 
 #define kContentBgLeftAndRightSpace kLeftMargin * kScreenWidthRatio
-#define kContentBgTopAndBottomSpace kLeftMargin * kScreenWidthRatio * 0.5
+#define kContentBgTopAndBottomSpace kLeftMargin * kScreenWidthRatio * 0.6
 #define kInsetMargin 10 * kScreenWidthRatio
 #define kImageViewHeight 250 * kScreenWidthRatio
 #define kLineSpace 6 * kScreenWidthRatio
