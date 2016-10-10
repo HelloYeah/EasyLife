@@ -14,7 +14,6 @@
 
 @implementation ELUtils
 
-
 + (NSInteger)totalDataCountForScrollView:(UIScrollView *)scrollView {
     NSInteger totalCount = 0;
     if ([scrollView isKindOfClass:[UITableView class]]) {
