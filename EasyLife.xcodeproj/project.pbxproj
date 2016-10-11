@@ -119,6 +119,11 @@
 		B453EA951DAA4A0900A0A8DC /* ELJokerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA941DAA4A0900A0A8DC /* ELJokerController.m */; };
 		B453EA981DAA4AE000A0A8DC /* ELJokerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA971DAA4AE000A0A8DC /* ELJokerModel.m */; };
 		B453EA9B1DAA4B4600A0A8DC /* ELJokerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B453EA9A1DAA4B4600A0A8DC /* ELJokerCell.m */; };
+		B459CC7F1DAC805700932D72 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = B459CC761DAC805700932D72 /* UIImage+Addition.m */; };
+		B459CC801DAC805700932D72 /* UIImage+Cut.m in Sources */ = {isa = PBXBuildFile; fileRef = B459CC781DAC805700932D72 /* UIImage+Cut.m */; };
+		B459CC811DAC805700932D72 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = B459CC7A1DAC805700932D72 /* UIImage+ImageEffects.m */; };
+		B459CC821DAC805700932D72 /* UIImageView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = B459CC7C1DAC805700932D72 /* UIImageView+Addition.m */; };
+		B459CC831DAC805700932D72 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B459CC7E1DAC805700932D72 /* UIImageView+LBBlurredImage.m */; };
 		B46B14211DAB803800EC8518 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B46B13E91DAB803800EC8518 /* LICENSE */; };
 		B46B14221DAB803800EC8518 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B46B13EA1DAB803800EC8518 /* README.md */; };
 		B46B14231DAB803800EC8518 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B13ED1DAB803800EC8518 /* YYCache.m */; };
@@ -399,6 +404,16 @@
 		B453EA971DAA4AE000A0A8DC /* ELJokerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELJokerModel.m; sourceTree = "<group>"; };
 		B453EA991DAA4B4600A0A8DC /* ELJokerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELJokerCell.h; sourceTree = "<group>"; };
 		B453EA9A1DAA4B4600A0A8DC /* ELJokerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELJokerCell.m; sourceTree = "<group>"; };
+		B459CC751DAC805700932D72 /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
+		B459CC761DAC805700932D72 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		B459CC771DAC805700932D72 /* UIImage+Cut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Cut.h"; sourceTree = "<group>"; };
+		B459CC781DAC805700932D72 /* UIImage+Cut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Cut.m"; sourceTree = "<group>"; };
+		B459CC791DAC805700932D72 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		B459CC7A1DAC805700932D72 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		B459CC7B1DAC805700932D72 /* UIImageView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Addition.h"; sourceTree = "<group>"; };
+		B459CC7C1DAC805700932D72 /* UIImageView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Addition.m"; sourceTree = "<group>"; };
+		B459CC7D1DAC805700932D72 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		B459CC7E1DAC805700932D72 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
 		B46B13E91DAB803800EC8518 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B46B13EA1DAB803800EC8518 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B46B13EC1DAB803800EC8518 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
@@ -572,6 +587,7 @@
 		B44768431DA88BC10014E9BB /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B459CC741DAC805700932D72 /* UIImage */,
 				B447688D1DA89F560014E9BB /* UIView */,
 			);
 			path = UIKit;
@@ -993,6 +1009,23 @@
 				B4476A011DA8D07E0014E9BB /* MJRefreshStateHeader.m */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		B459CC741DAC805700932D72 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				B459CC751DAC805700932D72 /* UIImage+Addition.h */,
+				B459CC761DAC805700932D72 /* UIImage+Addition.m */,
+				B459CC771DAC805700932D72 /* UIImage+Cut.h */,
+				B459CC781DAC805700932D72 /* UIImage+Cut.m */,
+				B459CC791DAC805700932D72 /* UIImage+ImageEffects.h */,
+				B459CC7A1DAC805700932D72 /* UIImage+ImageEffects.m */,
+				B459CC7B1DAC805700932D72 /* UIImageView+Addition.h */,
+				B459CC7C1DAC805700932D72 /* UIImageView+Addition.m */,
+				B459CC7D1DAC805700932D72 /* UIImageView+LBBlurredImage.h */,
+				B459CC7E1DAC805700932D72 /* UIImageView+LBBlurredImage.m */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 		B46B13E81DAB803800EC8518 /* YYCache */ = {
@@ -1556,6 +1589,7 @@
 				B44769D41DA8CF720014E9BB /* NSString+Size.m in Sources */,
 				B44768991DA89F560014E9BB /* UILabel+Addition.m in Sources */,
 				B44768A71DA8A0E80014E9BB /* ELCustomLoadingAnimationView.m in Sources */,
+				B459CC811DAC805700932D72 /* UIImage+ImageEffects.m in Sources */,
 				B46B14321DAB803800EC8518 /* _YYWebImageSetter.m in Sources */,
 				B44769B31DA8A4540014E9BB /* ViewController+MASAdditions.m in Sources */,
 				B44768831DA8956F0014E9BB /* ELFileCacheManager.m in Sources */,
@@ -1579,6 +1613,7 @@
 				B46B14231DAB803800EC8518 /* YYCache.m in Sources */,
 				B44769B01DA8A4540014E9BB /* NSArray+MASAdditions.m in Sources */,
 				B4476A181DA8D07E0014E9BB /* MJRefreshBackGifFooter.m in Sources */,
+				B459CC801DAC805700932D72 /* UIImage+Cut.m in Sources */,
 				B46B14341DAB803800EC8518 /* MKAnnotationView+YYWebImage.m in Sources */,
 				B46B142C1DAB803800EC8518 /* YYImageCoder.m in Sources */,
 				B4476A1B1DA8D07E0014E9BB /* MJRefreshGifHeader.m in Sources */,
@@ -1609,6 +1644,7 @@
 				B46B14251DAB803800EC8518 /* YYKVStorage.m in Sources */,
 				B44769881DA8A4450014E9BB /* UIImage+MultiFormat.m in Sources */,
 				B44768A41DA8A0B30014E9BB /* NSNotificationCenter+Addition.m in Sources */,
+				B459CC821DAC805700932D72 /* UIImageView+Addition.m in Sources */,
 				B4476A141DA8D07E0014E9BB /* MJRefreshHeader.m in Sources */,
 				B44769BF1DA8C9E40014E9BB /* ELRequestManager.m in Sources */,
 				B46B144D1DAB81E200EC8518 /* AFURLResponseSerialization.m in Sources */,
@@ -1623,6 +1659,7 @@
 				B447698B1DA8A4450014E9BB /* UIView+WebCacheOperation.m in Sources */,
 				B447685E1DA893E70014E9BB /* ELBaseModel.m in Sources */,
 				B44769891DA8A4450014E9BB /* UIImageView+HighlightedWebCache.m in Sources */,
+				B459CC7F1DAC805700932D72 /* UIImage+Addition.m in Sources */,
 				B46B14281DAB803800EC8518 /* README.md in Sources */,
 				B44768861DA895B60014E9BB /* NSFileManager+Paths.m in Sources */,
 				B46B14291DAB803800EC8518 /* YYAnimatedImageView.m in Sources */,
@@ -1647,6 +1684,7 @@
 				B46B142B1DAB803800EC8518 /* YYImage.m in Sources */,
 				B447698A1DA8A4450014E9BB /* UIImageView+WebCache.m in Sources */,
 				B44769B21DA8A4540014E9BB /* View+MASAdditions.m in Sources */,
+				B459CC831DAC805700932D72 /* UIImageView+LBBlurredImage.m in Sources */,
 				B4476A191DA8D07E0014E9BB /* MJRefreshBackNormalFooter.m in Sources */,
 				B447688C1DA89EB60014E9BB /* ELCustomNoNetworkEmptyView.m in Sources */,
 				B44769871DA8A4450014E9BB /* UIImage+GIF.m in Sources */,

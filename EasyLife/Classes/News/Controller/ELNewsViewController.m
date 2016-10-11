@@ -13,8 +13,8 @@
 
 
 @interface ELNewsViewController ()
-@property (nonatomic,weak) ELWeiXinNewsListController * weiXinNewsListVC;
-@property (nonatomic,weak) ELTodayHotNewsController * todayHotNewsVC;
+@property (nonatomic,strong) ELWeiXinNewsListController * weiXinNewsListVC;
+@property (nonatomic,strong) ELTodayHotNewsController * todayHotNewsVC;
 @end
 
 @implementation ELNewsViewController
@@ -36,29 +36,34 @@
 - (void)changeSelectedIndex:(UISegmentedControl *)segmentedControl{
     
     if(segmentedControl.selectedSegmentIndex == 0){
-       
-        ELTodayHotNewsController * todayHotNewsVC = [[ELTodayHotNewsController alloc]init];
-        [todayHotNewsVC willMoveToParentViewController:self];
-        [self addChildViewController:todayHotNewsVC];
-        _todayHotNewsVC = todayHotNewsVC;
-        [self.view addSubview:todayHotNewsVC.view];
-        
-        [_weiXinNewsListVC.view removeFromSuperview];
-        [_weiXinNewsListVC willMoveToParentViewController:nil];
-        [_weiXinNewsListVC removeFromParentViewController];
+        self.weiXinNewsListVC.view.hidden = YES;
+        self.todayHotNewsVC.view.hidden = NO;
         
     }else{
-
-        ELWeiXinNewsListController * weiXinNewsListVC = [[ELWeiXinNewsListController alloc]init];
-        [weiXinNewsListVC willMoveToParentViewController:self];
-        [self addChildViewController:weiXinNewsListVC];
-        _weiXinNewsListVC = weiXinNewsListVC;
-        [self.view addSubview:weiXinNewsListVC.view];
-        
-        [_todayHotNewsVC.view removeFromSuperview];
-        [_todayHotNewsVC willMoveToParentViewController:nil];
-        [_todayHotNewsVC removeFromParentViewController];
+        self.weiXinNewsListVC.view.hidden = NO;
+        self.todayHotNewsVC.view.hidden = YES;
     }
 }
+
+- (ELWeiXinNewsListController *)weiXinNewsListVC{
+    
+    if (_weiXinNewsListVC == nil) {
+        _weiXinNewsListVC = [[ELWeiXinNewsListController alloc]init];
+        [self addChildViewController:_weiXinNewsListVC];
+        [self.view addSubview:_weiXinNewsListVC.view];
+    }
+    return _weiXinNewsListVC;
+}
+
+- (ELTodayHotNewsController *)todayHotNewsVC{
+    
+    if (_todayHotNewsVC == nil) {
+        _todayHotNewsVC = [[ELTodayHotNewsController alloc]init];
+        [self addChildViewController:_todayHotNewsVC];
+        [self.view addSubview:_todayHotNewsVC.view];
+    }
+    return _todayHotNewsVC;
+}
+
 @end
 

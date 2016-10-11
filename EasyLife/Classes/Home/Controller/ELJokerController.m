@@ -50,14 +50,17 @@ static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2";
     self.textPageIndex = 1;
     [self loadData];
     
+    WeakSelf(weakSelf)
     [ELUtils addLoadMoreForScrollView:self.tableView loadMoreCallBack:^{
-        [self loadData];
+        [weakSelf loadData];
     }];
     
     [ELUtils addPullRefreshForScrollView:self.tableView pullRefreshCallBack:^{
-        [self pullRefresh];
+        [weakSelf pullRefresh];
     }];
 }
+
+
 - (void)changeSelectedIndex:(UISegmentedControl *)segmentedControl{
     
     if(segmentedControl.selectedSegmentIndex == 0){
@@ -103,22 +106,22 @@ static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2";
     ELBaseRequest * request = _isPic ? self.picRequest : self.textRequest;
     
     if (request == nil) return ;
+    WeakSelf(weakSelf)
     [request el_sendRequestWithCompletion:^(NSDictionary * response, BOOL success, NSString *message) {
         
         if (success) {
             
-            [self hideLoadingAnimation];
+            [weakSelf hideLoadingAnimation];
             [ELUtils endLoadMoreForScrollView:self.tableView];
             NSMutableArray * tempArray = response[@"data"];
             if (_isPic) {
-                [self.picDataArray addObjectsFromArray:[ELJokerModel modelArrayWithDictArray:tempArray]];
-                self.picPageIndex ++;
+                [weakSelf.picDataArray addObjectsFromArray:[ELJokerModel modelArrayWithDictArray:tempArray]];
+                weakSelf.picPageIndex ++;
             }else{
-                [self.textDataArray addObjectsFromArray:[ELJokerModel modelArrayWithDictArray:tempArray]];
-                self.textPageIndex ++;
+                [weakSelf.textDataArray addObjectsFromArray:[ELJokerModel modelArrayWithDictArray:tempArray]];
+                weakSelf.textPageIndex ++;
             }
-            [self.tableView reloadData];
-            
+            [weakSelf.tableView reloadData];
         }
     }];
 }
