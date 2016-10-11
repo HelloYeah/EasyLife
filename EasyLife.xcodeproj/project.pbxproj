@@ -124,6 +124,8 @@
 		B459CC811DAC805700932D72 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = B459CC7A1DAC805700932D72 /* UIImage+ImageEffects.m */; };
 		B459CC821DAC805700932D72 /* UIImageView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = B459CC7C1DAC805700932D72 /* UIImageView+Addition.m */; };
 		B459CC831DAC805700932D72 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B459CC7E1DAC805700932D72 /* UIImageView+LBBlurredImage.m */; };
+		B459CC8A1DACEA2800932D72 /* ELHoroscopeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B459CC891DACEA2800932D72 /* ELHoroscopeView.m */; };
+		B459CC8D1DACEA4800932D72 /* ELHoroscopeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B459CC8C1DACEA4800932D72 /* ELHoroscopeModel.m */; };
 		B46B14211DAB803800EC8518 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B46B13E91DAB803800EC8518 /* LICENSE */; };
 		B46B14221DAB803800EC8518 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B46B13EA1DAB803800EC8518 /* README.md */; };
 		B46B14231DAB803800EC8518 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B13ED1DAB803800EC8518 /* YYCache.m */; };
@@ -414,6 +416,10 @@
 		B459CC7C1DAC805700932D72 /* UIImageView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Addition.m"; sourceTree = "<group>"; };
 		B459CC7D1DAC805700932D72 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
 		B459CC7E1DAC805700932D72 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		B459CC881DACEA2800932D72 /* ELHoroscopeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELHoroscopeView.h; sourceTree = "<group>"; };
+		B459CC891DACEA2800932D72 /* ELHoroscopeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELHoroscopeView.m; sourceTree = "<group>"; };
+		B459CC8B1DACEA4800932D72 /* ELHoroscopeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELHoroscopeModel.h; sourceTree = "<group>"; };
+		B459CC8C1DACEA4800932D72 /* ELHoroscopeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELHoroscopeModel.m; sourceTree = "<group>"; };
 		B46B13E91DAB803800EC8518 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B46B13EA1DAB803800EC8518 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B46B13EC1DAB803800EC8518 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
@@ -698,7 +704,7 @@
 			children = (
 				B44768561DA891040014E9BB /* Controller */,
 				B44768571DA891040014E9BB /* Model */,
-				B44768581DA891040014E9BB /* View */,
+				B459CC871DACEA0000932D72 /* View */,
 			);
 			path = Life;
 			sourceTree = "<group>";
@@ -715,15 +721,10 @@
 		B44768571DA891040014E9BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B459CC8B1DACEA4800932D72 /* ELHoroscopeModel.h */,
+				B459CC8C1DACEA4800932D72 /* ELHoroscopeModel.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		B44768581DA891040014E9BB /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		B447685F1DA894F50014E9BB /* MJExtension */ = {
@@ -1026,6 +1027,15 @@
 				B459CC7E1DAC805700932D72 /* UIImageView+LBBlurredImage.m */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		B459CC871DACEA0000932D72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B459CC881DACEA2800932D72 /* ELHoroscopeView.h */,
+				B459CC891DACEA2800932D72 /* ELHoroscopeView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B46B13E81DAB803800EC8518 /* YYCache */ = {
@@ -1606,6 +1616,7 @@
 				B44769811DA8A4450014E9BB /* SDWebImageDecoder.m in Sources */,
 				B453EA921DAA268D00A0A8DC /* ELTodayHotNewsChildCell.m in Sources */,
 				B46B14331DAB803800EC8518 /* CALayer+YYWebImage.m in Sources */,
+				B459CC8D1DACEA4800932D72 /* ELHoroscopeModel.m in Sources */,
 				B46B144C1DAB81E200EC8518 /* AFURLRequestSerialization.m in Sources */,
 				B453EA771DAA117F00A0A8DC /* ELWeiXinNewsListController.m in Sources */,
 				B453EA981DAA4AE000A0A8DC /* ELJokerModel.m in Sources */,
@@ -1629,6 +1640,7 @@
 				B4476A161DA8D07E0014E9BB /* MJRefreshAutoNormalFooter.m in Sources */,
 				B44768A01DA89FD60014E9BB /* MBProgressHUD.m in Sources */,
 				B46B14221DAB803800EC8518 /* README.md in Sources */,
+				B459CC8A1DACEA2800932D72 /* ELHoroscopeView.m in Sources */,
 				B4476A171DA8D07E0014E9BB /* MJRefreshAutoStateFooter.m in Sources */,
 				B44768801DA894F50014E9BB /* NSString+MJExtension.m in Sources */,
 				B44769B41DA8A4540014E9BB /* README.md in Sources */,

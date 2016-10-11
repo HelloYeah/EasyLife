@@ -6,8 +6,8 @@
 //  Copyright © 2016年 EL. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ELBaseViewController.h"
 
-@interface ELLifeViewController : UITableViewController
+@interface ELLifeViewController : ELBaseViewController
 
 @end

@@ -24,6 +24,9 @@ UIKIT_EXTERN NSString *const kELJokerPicListAPI;
 /** 段子*/
 UIKIT_EXTERN NSString *const kELJokerTextListAPI;
 
+/** 星座运势*/
+UIKIT_EXTERN NSString *const kELHoroscopeAPI;
+
 #pragma mark - PUBLISH / 发布
 /** 内涵用户发布动态可选择的热吧列表*/
 UIKIT_EXTERN NSString *const kNHUserPublishSelectDraftListAPI;

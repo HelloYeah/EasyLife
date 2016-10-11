@@ -19,4 +19,7 @@ NSString *const kELTodayHotNewsListAPI = @"http://v.juhe.cn/toutiao/index";
 NSString *const kELJokerPicListAPI = @"http://japi.juhe.cn/joke/img/list.from";
 /** 段子 */
 NSString *const kELJokerTextListAPI = @"http://japi.juhe.cn/joke/content/list.from";
+/** 星座运势 */
+NSString *const kELHoroscopeAPI = @"http://web.juhe.cn:8080/constellation/getAll";
+
 @end
