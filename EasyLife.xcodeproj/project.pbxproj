@@ -158,6 +158,7 @@
 		B46B144C1DAB81E200EC8518 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B14441DAB81E200EC8518 /* AFURLRequestSerialization.m */; };
 		B46B144D1DAB81E200EC8518 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B14461DAB81E200EC8518 /* AFURLResponseSerialization.m */; };
 		B46B144E1DAB81E200EC8518 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B14481DAB81E200EC8518 /* AFURLSessionManager.m */; };
+		B486180F1E642BC30032512C /* ELDriverLicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B486180E1E642BC30032512C /* ELDriverLicenseViewController.m */; };
 		B493E19D1D9CA7BF0046C81A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E19C1D9CA7BF0046C81A /* main.m */; };
 		B493E1A01D9CA7BF0046C81A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E19F1D9CA7BF0046C81A /* AppDelegate.m */; };
 		B493E1A81D9CA7BF0046C81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B493E1A71D9CA7BF0046C81A /* Assets.xcassets */; };
@@ -478,6 +479,8 @@
 		B46B14461DAB81E200EC8518 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		B46B14471DAB81E200EC8518 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		B46B14481DAB81E200EC8518 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		B486180D1E642BC30032512C /* ELDriverLicenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELDriverLicenseViewController.h; sourceTree = "<group>"; };
+		B486180E1E642BC30032512C /* ELDriverLicenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELDriverLicenseViewController.m; sourceTree = "<group>"; };
 		B493E1981D9CA7BF0046C81A /* EasyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B493E19C1D9CA7BF0046C81A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B493E19E1D9CA7BF0046C81A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -714,6 +717,8 @@
 			children = (
 				B44768591DA891290014E9BB /* ELLifeViewController.h */,
 				B447685A1DA891290014E9BB /* ELLifeViewController.m */,
+				B486180D1E642BC30032512C /* ELDriverLicenseViewController.h */,
+				B486180E1E642BC30032512C /* ELDriverLicenseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1590,6 +1595,7 @@
 				B447682F1DA8885F0014E9BB /* ELTabBarController.m in Sources */,
 				B447687F1DA894F50014E9BB /* NSObject+MJProperty.m in Sources */,
 				B44769831DA8A4450014E9BB /* SDWebImageDownloaderOperation.m in Sources */,
+				B486180F1E642BC30032512C /* ELDriverLicenseViewController.m in Sources */,
 				B453EA831DAA195200A0A8DC /* ELWeiXinNewsDetailController.m in Sources */,
 				B44769AA1DA8A4540014E9BB /* MASCompositeConstraint.m in Sources */,
 				B44768781DA894F50014E9BB /* MJFoundation.m in Sources */,

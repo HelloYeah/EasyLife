@@ -78,8 +78,7 @@ static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2";
 - (ELBaseRequest *)picRequest{
     
     if (_picRequest == nil) {
-        ELBaseRequest * request = [ELBaseRequest el_request];
-        _picRequest = request;
+        _picRequest = [ELBaseRequest el_request];
     }
 
     NSDate *datenow = [NSDate date];//现在时间,你可以输出来看下是什么格式
@@ -91,8 +90,7 @@ static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2";
 - (ELBaseRequest *)textRequest{
     
     if (_textRequest == nil) {
-        ELBaseRequest * request = [ELBaseRequest el_request];
-        _textRequest = request;
+        _textRequest = [ELBaseRequest el_request];
     }
 
     NSDate *datenow = [NSDate date];//现在时间,你可以输出来看下是什么格式

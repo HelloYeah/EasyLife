@@ -22,4 +22,6 @@ NSString *const kELJokerTextListAPI = @"http://japi.juhe.cn/joke/content/list.fr
 /** 星座运势 */
 NSString *const kELHoroscopeAPI = @"http://web.juhe.cn:8080/constellation/getAll";
 
+
+NSString *const kAliBabaAppKey = @"89a4c7b3506c484283e71490af0cbec5";
 @end

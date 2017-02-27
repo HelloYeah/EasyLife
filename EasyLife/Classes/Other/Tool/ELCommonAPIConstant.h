@@ -27,16 +27,6 @@ UIKIT_EXTERN NSString *const kELJokerTextListAPI;
 /** 星座运势*/
 UIKIT_EXTERN NSString *const kELHoroscopeAPI;
 
-#pragma mark - PUBLISH / 发布
-/** 内涵用户发布动态可选择的热吧列表*/
-UIKIT_EXTERN NSString *const kNHUserPublishSelectDraftListAPI;
-
-
-#pragma mark - USER / 用户
-/** 内涵用户个人信息*/
-UIKIT_EXTERN NSString *const kNHUserProfileInfoAPI;
-
-#pragma mark - CHECK / 审核
-/** 内涵审核的动态列表*/
-UIKIT_EXTERN NSString *const kNHCheckDynamicListAPI;
+/** 星座运势*/
+UIKIT_EXTERN NSString *const kAliBabaAppKey;
 @end
