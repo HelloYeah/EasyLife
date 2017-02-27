@@ -12,7 +12,7 @@
 #import "ELNewsViewController.h"
 #import "ELMeViewController.h"
 #import "ELLifeViewController.h"
-
+#import "ELJokerController.h"
 
 @interface ELTabBarController ()
 
@@ -48,7 +48,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self addChildViewControllerWithClassname:[ELHomeViewController description] imagename:@"home" title:@"首页"];
+//    [self addChildViewControllerWithClassname:[ELHomeViewController description] imagename:@"home" title:@"首页"];
+    [self addChildViewControllerWithClassname:[ELJokerController description] imagename:@"home" title:@"首页"];
+    
     [self addChildViewControllerWithClassname:[ELNewsViewController description] imagename:@"newstab" title:@"新闻"];
     [self addChildViewControllerWithClassname:[ELLifeViewController description] imagename:@"Found" title:@"生活"];
     [self addChildViewControllerWithClassname:[ELMeViewController description]imagename:@"audit" title:@"我"];
