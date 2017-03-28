@@ -680,26 +680,10 @@
 		B447684B1DA88C820014E9BB /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				B447684C1DA88C820014E9BB /* Request */,
-				B447684F1DA88C820014E9BB /* View */,
 				B493E19E1D9CA7BF0046C81A /* AppDelegate.h */,
 				B493E19F1D9CA7BF0046C81A /* AppDelegate.m */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		B447684C1DA88C820014E9BB /* Request */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		B447684F1DA88C820014E9BB /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		B44768551DA891040014E9BB /* Life */ = {
@@ -1203,14 +1187,11 @@
 		B493E18F1D9CA7BF0046C81A = {
 			isa = PBXGroup;
 			children = (
-				B44769BB1DA8A5640014E9BB /* libiconv.tbd */,
-				B44769B91DA8A5530014E9BB /* libz.tbd */,
-				B44769B71DA8A5430014E9BB /* libc++.tbd */,
-				B44769B51DA8A50D0014E9BB /* libsqlite3.tbd */,
 				B493E19A1D9CA7BF0046C81A /* EasyLife */,
 				B493E1B41D9CA7BF0046C81A /* EasyLifeTests */,
 				B493E1BF1D9CA7BF0046C81A /* EasyLifeUITests */,
 				B493E1991D9CA7BF0046C81A /* Products */,
+				B4975D111E8A1FBD007C7CF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1448,6 +1429,17 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		B4975D111E8A1FBD007C7CF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B44769BB1DA8A5640014E9BB /* libiconv.tbd */,
+				B44769B91DA8A5530014E9BB /* libz.tbd */,
+				B44769B71DA8A5430014E9BB /* libc++.tbd */,
+				B44769B51DA8A50D0014E9BB /* libsqlite3.tbd */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1516,7 +1508,8 @@
 				TargetAttributes = {
 					B493E1971D9CA7BF0046C81A = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = W55448EFBF;
+						DevelopmentTeam = KPK53YL4KE;
+						ProvisioningStyle = Automatic;
 					};
 					B493E1B01D9CA7BF0046C81A = {
 						CreatedOnToolsVersion = 7.2;
@@ -1861,8 +1854,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KPK53YL4KE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EasyLife/ELPrefixHeader.pch";
 				INFOPLIST_FILE = EasyLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeliang.EasyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1876,8 +1871,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KPK53YL4KE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EasyLife/ELPrefixHeader.pch";
 				INFOPLIST_FILE = EasyLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeliang.EasyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
