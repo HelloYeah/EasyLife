@@ -18,6 +18,7 @@ static const NSString * kJHoroscopeAppKey = @"f0b6f98f5224c5d4f31adc7a07dec884";
 @interface ELLifeViewController ()
 @property (nonatomic,strong) ELHoroscopeView * horoscopeView;
 @property (nonatomic,strong) ELBaseRequest * request;
+@property (nonatomic,strong) UITableView *tableView;
 @end
 
 @implementation ELLifeViewController

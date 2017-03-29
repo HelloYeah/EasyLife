@@ -54,10 +54,7 @@
     
     [self addChildViewControllerWithClassname:[ELNewsViewController description] imagename:@"newstab" title:@"新闻"];
     [self addChildViewControllerWithClassname:[ELLifeViewController description] imagename:@"Found" title:@"生活"];
-//    [self addChildViewControllerWithClassname:[ELMeViewController description]imagename:@"audit" title:@"我"];
-    
-    
-    [self addChildViewControllerWithClassname:[ELDriverLicenseViewController description] imagename:@"audit" title:@"我"];
+    [self addChildViewControllerWithClassname:[ELMeViewController description]imagename:@"audit" title:@"我"];
 }
 
 // 添加子控制器

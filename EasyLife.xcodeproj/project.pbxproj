@@ -10,7 +10,6 @@
 		B447682F1DA8885F0014E9BB /* ELTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B447682E1DA8885F0014E9BB /* ELTabBarController.m */; };
 		B44768321DA8890C0014E9BB /* ELHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44768311DA8890C0014E9BB /* ELHomeViewController.m */; };
 		B44768351DA889670014E9BB /* ELNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44768341DA889670014E9BB /* ELNewsViewController.m */; };
-		B44768381DA889940014E9BB /* ELMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44768371DA889940014E9BB /* ELMeViewController.m */; };
 		B44768401DA88AE60014E9BB /* ELBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B447683F1DA88AE60014E9BB /* ELBaseNavigationViewController.m */; };
 		B447685B1DA891290014E9BB /* ELLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B447685A1DA891290014E9BB /* ELLifeViewController.m */; };
 		B447685E1DA893E70014E9BB /* ELBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B447685D1DA893E70014E9BB /* ELBaseModel.m */; };
@@ -165,6 +164,10 @@
 		B493E1AB1D9CA7BF0046C81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B493E1A91D9CA7BF0046C81A /* LaunchScreen.storyboard */; };
 		B493E1B61D9CA7BF0046C81A /* EasyLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E1B51D9CA7BF0046C81A /* EasyLifeTests.m */; };
 		B493E1C11D9CA7BF0046C81A /* EasyLifeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B493E1C01D9CA7BF0046C81A /* EasyLifeUITests.m */; };
+		B49514771E8B4A3700EB8BA9 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B49514761E8B4A3700EB8BA9 /* UIViewController+HUD.m */; };
+		B495147E1E8B4BBB00EB8BA9 /* ELSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B495147B1E8B4BBB00EB8BA9 /* ELSettingViewController.m */; };
+		B49514871E8B4BE800EB8BA9 /* ELMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49514821E8B4BE800EB8BA9 /* ELMeViewController.m */; };
+		B49514881E8B4BE800EB8BA9 /* ELUserInfoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49514861E8B4BE800EB8BA9 /* ELUserInfoHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,8 +194,6 @@
 		B44768311DA8890C0014E9BB /* ELHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELHomeViewController.m; sourceTree = "<group>"; };
 		B44768331DA889670014E9BB /* ELNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNewsViewController.h; sourceTree = "<group>"; };
 		B44768341DA889670014E9BB /* ELNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNewsViewController.m; sourceTree = "<group>"; };
-		B44768361DA889940014E9BB /* ELMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELMeViewController.h; sourceTree = "<group>"; };
-		B44768371DA889940014E9BB /* ELMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELMeViewController.m; sourceTree = "<group>"; };
 		B447683E1DA88AE60014E9BB /* ELBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELBaseNavigationViewController.h; sourceTree = "<group>"; };
 		B447683F1DA88AE60014E9BB /* ELBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELBaseNavigationViewController.m; sourceTree = "<group>"; };
 		B447684A1DA88C1D0014E9BB /* ELDefaultHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELDefaultHeader.h; sourceTree = "<group>"; };
@@ -494,6 +495,14 @@
 		B493E1BC1D9CA7BF0046C81A /* EasyLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B493E1C01D9CA7BF0046C81A /* EasyLifeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyLifeUITests.m; sourceTree = "<group>"; };
 		B493E1C21D9CA7BF0046C81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49514751E8B4A3700EB8BA9 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		B49514761E8B4A3700EB8BA9 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		B495147A1E8B4BBB00EB8BA9 /* ELSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELSettingViewController.h; sourceTree = "<group>"; };
+		B495147B1E8B4BBB00EB8BA9 /* ELSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELSettingViewController.m; sourceTree = "<group>"; };
+		B49514811E8B4BE800EB8BA9 /* ELMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELMeViewController.h; sourceTree = "<group>"; };
+		B49514821E8B4BE800EB8BA9 /* ELMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELMeViewController.m; sourceTree = "<group>"; };
+		B49514851E8B4BE800EB8BA9 /* ELUserInfoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELUserInfoHeaderView.h; sourceTree = "<group>"; };
+		B49514861E8B4BE800EB8BA9 /* ELUserInfoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELUserInfoHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -596,6 +605,7 @@
 		B44768431DA88BC10014E9BB /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B49514741E8B4A3700EB8BA9 /* UIViewController */,
 				B459CC741DAC805700932D72 /* UIImage */,
 				B447688D1DA89F560014E9BB /* UIView */,
 			);
@@ -1334,34 +1344,10 @@
 		B493E1D71D9CA8590046C81A /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				B493E1D81D9CA8590046C81A /* Controller */,
-				B493E1D91D9CA8590046C81A /* Model */,
-				B493E1DA1D9CA8590046C81A /* View */,
+				B495147F1E8B4BE800EB8BA9 /* Me */,
+				B49514781E8B4BBB00EB8BA9 /* Setting */,
 			);
 			path = Me;
-			sourceTree = "<group>";
-		};
-		B493E1D81D9CA8590046C81A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B44768361DA889940014E9BB /* ELMeViewController.h */,
-				B44768371DA889940014E9BB /* ELMeViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B493E1D91D9CA8590046C81A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B493E1DA1D9CA8590046C81A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		B493E1DB1D9CA8590046C81A /* News */ = {
@@ -1427,6 +1413,83 @@
 				B44768491DA88BC10014E9BB /* Vendor */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		B49514741E8B4A3700EB8BA9 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B49514751E8B4A3700EB8BA9 /* UIViewController+HUD.h */,
+				B49514761E8B4A3700EB8BA9 /* UIViewController+HUD.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		B49514781E8B4BBB00EB8BA9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B49514791E8B4BBB00EB8BA9 /* Controller */,
+				B495147C1E8B4BBB00EB8BA9 /* Model */,
+				B495147D1E8B4BBB00EB8BA9 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B49514791E8B4BBB00EB8BA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B495147A1E8B4BBB00EB8BA9 /* ELSettingViewController.h */,
+				B495147B1E8B4BBB00EB8BA9 /* ELSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B495147C1E8B4BBB00EB8BA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B495147D1E8B4BBB00EB8BA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B495147F1E8B4BE800EB8BA9 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				B49514801E8B4BE800EB8BA9 /* Controller */,
+				B49514831E8B4BE800EB8BA9 /* Model */,
+				B49514841E8B4BE800EB8BA9 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		B49514801E8B4BE800EB8BA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B49514811E8B4BE800EB8BA9 /* ELMeViewController.h */,
+				B49514821E8B4BE800EB8BA9 /* ELMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B49514831E8B4BE800EB8BA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B49514841E8B4BE800EB8BA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B49514851E8B4BE800EB8BA9 /* ELUserInfoHeaderView.h */,
+				B49514861E8B4BE800EB8BA9 /* ELUserInfoHeaderView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B4975D111E8A1FBD007C7CF5 /* Frameworks */ = {
@@ -1583,6 +1646,7 @@
 			files = (
 				B46B14391DAB803800EC8518 /* YYWebImageManager.m in Sources */,
 				B447689C1DA89F560014E9BB /* UIView+Tap.m in Sources */,
+				B495147E1E8B4BBB00EB8BA9 /* ELSettingViewController.m in Sources */,
 				B4476A1F1DA8D07E0014E9BB /* MJRefreshConst.m in Sources */,
 				B453EA8F1DAA1DAF00A0A8DC /* ELTodayHotNewsChildModel.m in Sources */,
 				B447682F1DA8885F0014E9BB /* ELTabBarController.m in Sources */,
@@ -1641,13 +1705,13 @@
 				B46B14221DAB803800EC8518 /* README.md in Sources */,
 				B459CC8A1DACEA2800932D72 /* ELHoroscopeView.m in Sources */,
 				B4476A171DA8D07E0014E9BB /* MJRefreshAutoStateFooter.m in Sources */,
+				B49514771E8B4A3700EB8BA9 /* UIViewController+HUD.m in Sources */,
 				B44768801DA894F50014E9BB /* NSString+MJExtension.m in Sources */,
 				B44769B41DA8A4540014E9BB /* README.md in Sources */,
 				B46B144A1DAB81E200EC8518 /* AFNetworkReachabilityManager.m in Sources */,
 				B4476A241DA8D07E0014E9BB /* README.md in Sources */,
 				B44769AB1DA8A4540014E9BB /* MASConstraint.m in Sources */,
 				B4476A211DA8D07E0014E9BB /* UIScrollView+MJExtension.m in Sources */,
-				B44768381DA889940014E9BB /* ELMeViewController.m in Sources */,
 				B4476A271DA8D0B70014E9BB /* ELUserInfoManager.m in Sources */,
 				B4476A331DA8D3840014E9BB /* ELRefreshFooter.m in Sources */,
 				B4476A101DA8D07E0014E9BB /* MJRefreshAutoFooter.m in Sources */,
@@ -1661,6 +1725,7 @@
 				B46B144D1DAB81E200EC8518 /* AFURLResponseSerialization.m in Sources */,
 				B447687B1DA894F50014E9BB /* MJPropertyType.m in Sources */,
 				B447687E1DA894F50014E9BB /* NSObject+MJKeyValue.m in Sources */,
+				B49514881E8B4BE800EB8BA9 /* ELUserInfoHeaderView.m in Sources */,
 				B447697E1DA8A4450014E9BB /* NSData+ImageContentType.m in Sources */,
 				B493E1A01D9CA7BF0046C81A /* AppDelegate.m in Sources */,
 				B46B14311DAB803800EC8518 /* README.md in Sources */,
@@ -1683,6 +1748,7 @@
 				B44768981DA89F560014E9BB /* MBProgressHUD+NHAddition.m in Sources */,
 				B4476A231DA8D07E0014E9BB /* UIView+MJExtension.m in Sources */,
 				B44769D51DA8CF720014E9BB /* NSString+URL.m in Sources */,
+				B49514871E8B4BE800EB8BA9 /* ELMeViewController.m in Sources */,
 				B44768791DA894F50014E9BB /* MJProperty.m in Sources */,
 				B453EA8C1DAA1D4200A0A8DC /* ELTodayHotNewsChildController.m in Sources */,
 				B4476A301DA8D24D0014E9BB /* ELCommonConstant.m in Sources */,

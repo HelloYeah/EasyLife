@@ -9,7 +9,7 @@
 #import "ELDriverLicenseViewController.h"
 #import "ELBaseRequest.h"
 
-@interface ELDriverLicenseViewController ()
+@interface ELDriverLicenseViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
 @property (nonatomic,strong) NSMutableArray * dataArray;
 @property (nonatomic,assign) NSInteger pageIndex;
