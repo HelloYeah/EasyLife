@@ -26,11 +26,11 @@
 
     聚合Api有提供驾校考试的API，也想整进来，搞个大杂烩。由于需要自己设计效果，有点怕怕。。有比较好想法的朋友可以反馈给我。。
     
-    如果页面没有数据，有可能是请求次数到了上限。你替换成自己的试一试就好了。
-    
+    如果页面没有数据，有可能是请求次数到了上限。你替换成自己的试一试就好了。
+
     如下：
-    
-    static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2" 聚合给的笑话AppKey
+
+    static const NSString * kJokerAppKey = @"d8d621f7c735a1be9c79a725daf5bde2" 聚合给的笑话AppKey
     
 ### 增加FM播放。
 
